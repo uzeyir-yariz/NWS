@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import '_varible.scss';
+
+html {
+  font-size: 20px; 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: $bg_color_base; 
+  // height: 150vh; 
+  // daha uzun gözükmesi için uzatılmış
+}
+
+ul{
+  list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,a,img{
+  font-family: $text_base_font;
+  color: $text_color_normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: $special_scrolbar_width; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $special_scrolbar_color_default; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $special_scrolbar_color_hovered;
+}

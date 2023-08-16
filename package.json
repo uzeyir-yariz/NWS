@@ -1,0 +1,15 @@
+{
+  "name": "nws",
+  "version": "1.0.0",
+  "description": "Next_Web_Solutions",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -w scss -o public/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
