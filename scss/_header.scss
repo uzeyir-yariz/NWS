@@ -1,0 +1,72 @@
+@import '_varible.scss';
+
+.header{
+    height: 100vh;
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+        text-align: center;
+        align-items: center;
+        
+        img{
+
+        } 
+        
+        ul{
+            display: flex;
+
+            li{
+                margin-left:  2rem;
+                margin-right: 2rem;
+
+                // * linkler
+                .active_link{
+                    color: $special_links_color_active;
+                    border-bottom: solid 1px $special_links_color_active;
+                } .deactive_link{
+                    color: $special_links_color_deactive;
+                    transition: 500ms all;
+                    border-bottom: solid 1px rgba(255, 255, 255, 0);
+                    &:hover{
+                        border-bottom: solid 1px $special_links_color_deactive;
+
+                    }
+                }
+            }
+        }
+        
+        .sign_link{
+            border-bottom: solid 1px;
+            padding: 0.3rem;
+            width: 6.5%;
+            border-radius: 15px;
+            transition: 500ms color;
+
+            &:hover{
+                border-bottom: solid 1px $text_color_special;
+                color: $text_color_special;
+            }
+        }
+    }
+
+    // * başlık bölümü
+    h1{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        font-size: 400%;
+        align-items: center;
+        justify-content: center;
+        margin-top: -10%;
+
+        span{
+            margin-left: 15px;
+            font-style: italic;
+            font-weight: 100;
+            color: $text_color_special;
+        }
+    }
+}
