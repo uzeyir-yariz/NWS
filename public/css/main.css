@@ -120,9 +120,9 @@ h1, h2, h3, h4, h5, h6, a, img, span {
     opacity: 0.7; }
 
 /* 
-    ! header üst tarafta ki şey gözden kayboluyor 
-    TODO: üst taraf uymuyor yani header ksımında ki şey geniş ekranda fazla yukarı kaçıyor 
-    * telefon için ideal olarak tasarlanmış sayıların başka bir yere atanması gerektiğini düşünüyorum
+    // header üst tarafta ki şey gözden kayboluyor 
+    // TODO: üst taraf uymuyor yani header ksımında ki şey geniş ekranda fazla yukarı kaçıyor 
+    // * telefon için ideal olarak tasarlanmış sayıların başka bir yere atanması gerektiğini düşünüyorum
 */
 .timer_content {
   display: flex;
