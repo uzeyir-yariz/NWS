@@ -13,7 +13,7 @@ html {
 
 body{
   background-color: $bg_color_base; 
-  // height: 150vh; 
+  height: 150vh; 
   // daha uzun gözükmesi için uzatılmış
 }
 
@@ -26,6 +26,10 @@ h1,h2,h3,h4,h5,h6,a,img,span{
   color: $text_color_normal;
   text-transform: uppercase;
   text-decoration: none;
+} p{
+  font-family: $text_base_font;
+  color: $text_color_normal;
+  font-weight: 300;
 }
 
 ::-webkit-scrollbar {
