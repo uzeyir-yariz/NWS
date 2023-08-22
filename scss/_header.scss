@@ -2,6 +2,10 @@
 
 .header{
     height: 100vh;
+    background-image: url("https://drive.google.com/uc?export=download&id=1aVl8FiFHHXmmLsX3zV9-pMPJRdlPdA5H");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 
     nav{
         display: flex;
@@ -57,7 +61,7 @@
         height: 100%;
         width: 100%;
         text-align: center;
-        font-size: 400%;
+        font-size: 9vh;
         align-items: center;
         justify-content: center;
         margin-top: -5%;
