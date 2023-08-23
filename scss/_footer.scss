@@ -11,7 +11,7 @@ footer{
 
     .row-1{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         gap: 5vw;
 
         span{
@@ -21,7 +21,7 @@ footer{
                 align-self: center;
                 color: $special_icons_color_default;
                 transition: 500ms ease-in-out;
-                font-size: 4.5vw;
+                font-size: 3vw;
                 &:hover{color: $special_icons_color_hovered;}
                 margin-right: 2vw;
             }
@@ -31,16 +31,66 @@ footer{
                 flex-direction: column;
 
                 h6{
-                    font-size: 2.5vw;
+                    font-size: 2vw;
                     font-weight: 300;
                     text-transform: none;
                 } p{
                     font-weight: 100;
                     text-transform: capitalize;
                     opacity: 0.5;
-                    font-size: 1.8vw;
+                    font-size: 1.3vw;
                 }
             }
+        }
+    }
+
+    .row-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-content: space-around;
+
+        .abo{
+            img{
+                
+            } p{
+                opacity: 0.5;
+                font-size: 1.5vw;
+                word-spacing: 2px;
+                letter-spacing: 1px;
+                text-transform: none;
+            } h6{
+                font-size: 2.5vw;
+            } span{
+                display: flex;
+                gap: 15px;
+                font-size: 2.5vw;
+
+                a{
+                    transition: 500ms ease-in-out color;
+
+                    &:hover{
+                        color: $special_icons_color_hovered;
+                    }
+                }
+            }
+        } 
+        
+        .use{
+            hr{width: 30%; margin-bottom: 5px; margin-top: 5px;}
+        } 
+        
+        .sub{
+            p{
+                opacity: 0.5;
+                font-size: 1.5vw;
+                word-spacing: 2px;
+                letter-spacing: 1px;
+                text-transform: none;
+            }
+            
+            hr{width: 30%; margin-bottom: 5px; margin-top: 5px;}
+
         }
     }
 }

@@ -14,7 +14,7 @@ body {
 ul {
   list-style: none; }
 
-h1, h2, h3, h4, h5, h6, a, img, span, div {
+h1, h2, h3, h4, h5, h6, a, img {
   font-family: "Roboto";
   color: #e9e9e6;
   text-transform: uppercase;
@@ -25,7 +25,7 @@ p {
   color: #e9e9e6;
   font-weight: 300; }
 
-hr {
+.base_hr {
   opacity: 0.2;
   margin-top: 25px;
   margin-bottom: 25px; }
@@ -133,8 +133,8 @@ hr {
           color: #90f508; }
     .card-section .card .picture-content {
       background-color: white;
-      max-height: 40vw;
-      min-height: 30vw;
+      max-height: 30vw;
+      min-height: 25vw;
       min-width: 40%;
       border-radius: 10px;
       background-size: cover;
@@ -193,7 +193,7 @@ footer {
     width: 90%; }
   footer .row-1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 5vw; }
     footer .row-1 span {
       display: flex; }
@@ -201,7 +201,7 @@ footer {
         align-self: center;
         color: #00ffc8;
         transition: 500ms ease-in-out;
-        font-size: 4.5vw;
+        font-size: 3vw;
         margin-right: 2vw; }
         footer .row-1 span i:hover {
           color: #2980b9; }
@@ -209,11 +209,46 @@ footer {
         display: flex;
         flex-direction: column; }
         footer .row-1 span span h6 {
-          font-size: 2.5vw;
+          font-size: 2vw;
           font-weight: 300;
           text-transform: none; }
         footer .row-1 span span p {
           font-weight: 100;
           text-transform: capitalize;
           opacity: 0.5;
-          font-size: 1.8vw; }
+          font-size: 1.3vw; }
+  footer .row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-content: space-around; }
+    footer .row-2 .abo p {
+      opacity: 0.5;
+      font-size: 1.5vw;
+      word-spacing: 2px;
+      letter-spacing: 1px;
+      text-transform: none; }
+    footer .row-2 .abo h6 {
+      font-size: 2.5vw; }
+    footer .row-2 .abo span {
+      display: flex;
+      gap: 15px;
+      font-size: 2.5vw; }
+      footer .row-2 .abo span a {
+        transition: 500ms ease-in-out color; }
+        footer .row-2 .abo span a:hover {
+          color: #2980b9; }
+    footer .row-2 .use hr {
+      width: 30%;
+      margin-bottom: 5px;
+      margin-top: 5px; }
+    footer .row-2 .sub p {
+      opacity: 0.5;
+      font-size: 1.5vw;
+      word-spacing: 2px;
+      letter-spacing: 1px;
+      text-transform: none; }
+    footer .row-2 .sub hr {
+      width: 30%;
+      margin-bottom: 5px;
+      margin-top: 5px; }
