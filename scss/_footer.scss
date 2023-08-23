@@ -1,0 +1,46 @@
+@import '_varible.scss';
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    hr{
+        align-self: center;
+        width: 90%;}
+
+    .row-1{
+        display: flex;
+        justify-content: center;
+        gap: 5vw;
+
+        span{
+            display: flex;
+            
+            i{
+                align-self: center;
+                color: $special_icons_color_default;
+                transition: 500ms ease-in-out;
+                font-size: 4.5vw;
+                &:hover{color: $special_icons_color_hovered;}
+                margin-right: 2vw;
+            }
+
+            span{
+                display: flex;
+                flex-direction: column;
+
+                h6{
+                    font-size: 2.5vw;
+                    font-weight: 300;
+                    text-transform: none;
+                } p{
+                    font-weight: 100;
+                    text-transform: capitalize;
+                    opacity: 0.5;
+                    font-size: 1.8vw;
+                }
+            }
+        }
+    }
+}

@@ -21,7 +21,7 @@ ul{
   list-style: none;
 }
 
-h1,h2,h3,h4,h5,h6,a,img,span{
+h1,h2,h3,h4,h5,h6,a,img,span,div{
   font-family: $text_base_font;
   color: $text_color_normal;
   text-transform: uppercase;
@@ -30,6 +30,10 @@ h1,h2,h3,h4,h5,h6,a,img,span{
   font-family: $text_base_font;
   color: $text_color_normal;
   font-weight: 300;
+} hr{
+  opacity: 0.2;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 ::-webkit-scrollbar {

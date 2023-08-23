@@ -2,7 +2,7 @@
 
 .header{
     height: 100vh;
-    background-image: url("https://drive.google.com/uc?export=download&id=1aVl8FiFHHXmmLsX3zV9-pMPJRdlPdA5H");
+    background-image: url("https://github.com/uzeyir-yariz/NWS/blob/section-1-creating/images/index%20picture/main_img.png?raw=true");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -20,10 +20,9 @@
         
         ul{
             display: flex;
+            gap: 4rem;
 
             li{
-                margin-left:  2rem;
-                margin-right: 2rem;
 
                 // * linkler
                 .active_link{
@@ -61,7 +60,7 @@
         height: 100%;
         width: 100%;
         text-align: center;
-        font-size: 9vh;
+        font-size: 10vw;
         align-items: center;
         justify-content: center;
         margin-top: -5%;
