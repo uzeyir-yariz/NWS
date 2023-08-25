@@ -168,12 +168,12 @@ footer{
         align-items: center;
         p{
             font-size: 1.8vw;
+            opacity: 0.8;
 
             a{
                 color: $special_icons_color_default;
                 border-bottom: solid 2px rgba(0, 0, 0, 0);
                 transition: all 500ms ease-in-out;
-                opacity: 0.7;
                 
                 &:hover{
                     color: $special_icons_color_hovered;
