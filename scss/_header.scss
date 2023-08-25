@@ -13,11 +13,6 @@
         padding: 1rem;
         text-align: center;
         align-items: center;
-        
-        img{
-
-        } 
-        
         ul{
             display: flex;
             gap: 4rem;
@@ -64,7 +59,8 @@
         align-items: center;
         justify-content: center;
         margin-top: -5%;
-        span{
+
+        .NWS{
             margin-left: 15px;
             font-style: italic;
             font-weight: 100;
