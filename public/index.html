@@ -10,16 +10,34 @@
     <title>üzeyir yarız</title>
 </head>
 <body>
-    <header class="header">
-        <nav>
-            <img src="https://raw.githubusercontent.com/uzeyir-yariz/NWS/section-1-creating/images/logo.png" alt="page_logo" class="page_logo">
-            <ul>
+    <nav class="navbar">
+        <img src="https://raw.githubusercontent.com/uzeyir-yariz/NWS/section-1-creating/images/logo.png" alt="page_logo" class="page_logo">
+        <div class="overlay">
+            <ul class="overlay-content">
                 <li><a href="/public/index.html" class="active_link">home</a></li>
                 <li><a href="#" class="deactive_link">link</a></li>
                 <li><a href="#" class="deactive_link">link</a></li>
+                <li><a href="#" class="sign_link">sign</a></li>
             </ul>
-            <a href="" class="sign_link">sign</a>
-        </nav>
+            <span class="overlay-close-btn" onclick="close_nav()"><i class="fas fa-times"></i></span>
+        </div>
+        <span onclick="open_nav()" class="overlay-open-btn"><i class="fas fa-bars"></i></span>
+    </nav>
+
+    <!-- <nav class="overlay">
+        <img src="https://raw.githubusercontent.com/uzeyir-yariz/NWS/section-1-creating/images/logo.png" alt="page_logo" class="page_logo">
+        <a href="javascript:void(0)" class="overlay-close-btn" onclick="close_nav()">&times;</a>
+        <ul class="overlay-content">
+            <li><a href="/public/index.html" class="active_link">home</a></li>
+            <li><a href="#" class="deactive_link">link</a></li>
+            <li><a href="#" class="deactive_link">link</a></li>
+            <li><a href="" class="sign_link">sign</a></li>
+        </ul>
+        <span onclick="open_nav()" class="overlay-open-btn">&#9776;</span>
+    </nav> -->
+
+    
+    <header class="header">
 
         <h1 id="typing-effect"><span class="h1" id="typed-text"></span><span class="NWS" id="NWS"></span></h1>
     </header>
@@ -143,6 +161,5 @@
     </footer>
     <script src="src/anim/js_anime.js"></script>
     <script src="src/javascript/simple_js.js"></script>
-
 </body>
 </html>
