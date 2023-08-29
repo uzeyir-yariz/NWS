@@ -84,6 +84,8 @@ p {
       gap: 32px; }
 
 @media (max-width: 700px) {
+  .navbar {
+    top: -50px; }
   .overlay {
     position: fixed;
     height: 100%;
@@ -320,7 +322,9 @@ nav{
     margin-top: 10px;
     margin-bottom: 15px; }
   .card-section {
-    transform: scale(0.9); } }
+    transform: scale(0.9); }
+    .card-section .card .text-content p {
+      font-size: 3vw; } }
 
 .picture-content1 {
   background: url("https://github.com/uzeyir-yariz/NWS/blob/section-1-creating/images/index%20picture/hakk%C4%B1m%C4%B1zda%20b%C3%B6l%C3%BCm%C3%BC%20i%C3%A7in%20resim.png?raw=true"); }
@@ -500,3 +504,77 @@ footer {
           color: #2980b9;
           opacity: 1;
           border-bottom: solid 2px #2980b9; }
+
+@media (max-width: 700px) {
+  footer {
+    display: flex;
+    gap: 15px;
+    flex-direction: column; }
+    footer .row-1 {
+      display: grid; }
+      footer .row-1 span i {
+        font-size: 9vw; }
+      footer .row-1 span span h6 {
+        font-size: 6vw; }
+      footer .row-1 span span p {
+        font-size: 3vw; }
+    footer .row-2 {
+      display: flex;
+      flex-direction: column !important;
+      align-items: center;
+      gap: 50px; }
+      footer .row-2 div {
+        display: flex;
+        flex-direction: column !important; }
+      footer .row-2 .abo {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        footer .row-2 .abo img {
+          min-height: 20vw; }
+        footer .row-2 .abo p {
+          font-size: 4vw;
+          text-align: center; }
+        footer .row-2 .abo h6 {
+          font-size: 7vw; }
+        footer .row-2 .abo span a i {
+          font-size: 8vw; }
+      footer .row-2 .use {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center; }
+        footer .row-2 .use h6 {
+          font-size: 6vw; }
+        footer .row-2 .use hr {
+          width: 100%; }
+        footer .row-2 .use ul {
+          width: 100%; }
+          footer .row-2 .use ul li a {
+            font-size: 6vw; }
+      footer .row-2 .sub {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+        footer .row-2 .sub h6 {
+          font-size: 6vw; }
+        footer .row-2 .sub hr {
+          align-self: center;
+          width: 50%; }
+        footer .row-2 .sub p {
+          font-size: 4vw; }
+        footer .row-2 .sub span {
+          margin-top: 30px; }
+          footer .row-2 .sub span input {
+            width: 100%; }
+    footer .row-3 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 15px; }
+      footer .row-3 p {
+        font-size: 3.5vw; }
+      footer .row-3 span ul li a {
+        font-size: 4vw; } }

@@ -203,3 +203,111 @@ footer{
         }
     }
 }
+
+@media(max-width: 700px){
+    footer{
+
+        // TODO: yazıların biraz daha büyük olması gerekli
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+
+        .row-1{
+            display: grid;
+
+            span{
+                i   {font-size: 9vw;}
+                span{h6{
+                    font-size: 6vw;
+                }p{
+                    font-size: 3vw;
+                }}
+            }
+
+        } .row-2{
+            display: flex;
+            flex-direction: column !important;
+            align-items: center;
+            gap: 50px;
+
+            div{
+                display: flex;
+                flex-direction: column !important;
+            }
+
+            .abo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    min-height: 20vw;
+                } p{
+                    font-size: 4vw;
+                    text-align: center;
+                } h6{
+                    font-size: 7vw;
+                } span{
+
+                    a{i{font-size: 8vw;}}
+                }
+            } 
+            
+            .use{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+
+                h6{
+                    font-size: 6vw;
+                } hr{
+                    width: 100%;
+                } ul{
+                    width: 100%;
+                    
+                    li{a{
+                        font-size: 6vw;
+                    }}
+                }
+            }
+
+            .sub{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                h6{
+                    font-size: 6vw;
+                } hr{
+                    align-self: center;
+                    width: 50%;
+                } p{
+                    font-size: 4vw;
+                } span{
+                    margin-top: 30px;
+
+                    input{
+                        width: 100%;
+                    } button{
+
+                    }
+                }
+            }
+        }
+
+        .row-3{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 15px;
+
+            p{font-size: 3.5vw;}
+            span{ul{li{a{
+                font-size: 4vw;
+            }}}}
+        }
+    }
+}
