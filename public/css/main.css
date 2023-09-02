@@ -48,7 +48,7 @@ p {
 
 .header {
   height: 100vh;
-  background-image: url("https://github.com/uzeyir-yariz/NWS/blob/section-1-creating/images/index%20picture/main_img.png?raw=true");
+  background-image: url("https://github.com/uzeyir-yariz/NWS/blob/main/images/index%20picture/main_img.png?raw=true");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
@@ -333,7 +333,7 @@ nav{
     gap: 25px;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: auto;
     overflow: hidden;
     transition: 500ms all ease-in-out; }
     .section-2 .github-stats img {
@@ -341,6 +341,55 @@ nav{
       cursor: pointer; }
       .section-2 .github-stats img:hover {
         transform: scale(1.1); }
+
+.section-3 {
+  display: flex;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  gap: 50px;
+  height: 300px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+  align-items: center;
+  margin-bottom: 25px;
+  /* resimler */ }
+  .section-3 .arma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    left: -100%;
+    animation: kaydir 10s linear infinite;
+    animation-play-state: running;
+    cursor: pointer;
+    transition: 500ms ease-in-out all; }
+    .section-3 .arma:hover {
+      transform: scale(1.5); }
+    .section-3 .arma img {
+      width: 40%; }
+  .section-3:hover .arma {
+    animation-play-state: paused; }
+  .section-3:hover {
+    background-color: #272727; }
+  .section-3 .gold {
+    background-image: url("https://github.com/uzeyir-yariz/NWS/blob/main/images/arma/gold.png?raw=true"); }
+  .section-3 .silver {
+    background-image: url("https://github.com/uzeyir-yariz/NWS/blob/main/images/arma/silver.png?raw=true"); }
+  .section-3 .bronze {
+    background-image: url("https://github.com/uzeyir-yariz/NWS/blob/main/images/arma/bronze.png?raw=true"); }
+
+@keyframes kaydir {
+  0% {
+    left: -100%; }
+  100% {
+    left: 100%; } }
 
 @media screen and (max-width: 700px) {
   .slide-right {
@@ -359,19 +408,27 @@ nav{
     .card-section .card .text-content p {
       font-size: 3vw; }
   .github-stats {
-    width: 75% !important; } }
+    width: 75% !important; }
+  .arma {
+    width: 30vw !important;
+    height: 30vw !important; }
+  @keyframes kaydir {
+    0% {
+      left: -150%; }
+    100% {
+      left: 200%; } } }
 
 .picture-content1 {
-  background: url("https://github.com/uzeyir-yariz/NWS/blob/section-1-creating/images/index%20picture/hakk%C4%B1m%C4%B1zda%20b%C3%B6l%C3%BCm%C3%BC%20i%C3%A7in%20resim.png?raw=true"); }
+  background: url("https://github.com/uzeyir-yariz/NWS/blob/main/images/index%20picture/hakk%C4%B1m%C4%B1zda%20b%C3%B6l%C3%BCm%C3%BC%20i%C3%A7in%20resim.png?raw=true"); }
 
 .picture-content2 {
-  background: url("https://github.com/uzeyir-yariz/NWS/blob/section-1-creating/images/index%20picture/github_ptojeler_img.png?raw=true"); }
+  background: url("https://github.com/uzeyir-yariz/NWS/blob/main/images/index%20picture/github_ptojeler_img.png?raw=true"); }
 
 .picture-content3 {
-  background: url("https://github.com/uzeyir-yariz/NWS/blob/section-1-creating/images/index%20picture/teknolojik_demolar_img.png?raw=true"); }
+  background: url("https://github.com/uzeyir-yariz/NWS/blob/main/images/index%20picture/teknolojik_demolar_img.png?raw=true"); }
 
 .picture-content4 {
-  background: url("https://github.com/uzeyir-yariz/NWS/blob/section-1-creating/images/index%20picture/blog_makaleler_img.png?raw=true"); }
+  background: url("https://github.com/uzeyir-yariz/NWS/blob/main/images/index%20picture/blog_makaleler_img.png?raw=true"); }
 
 main {
   background: linear-gradient(to bottom, #000, #1d1d1d); }
