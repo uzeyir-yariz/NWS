@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function open_CV() {
         let scren_width = ekranGenisliginiOlç();
 
-        main.style.height = "190vh";
+        main.style.height = "250vh";
 
         cv.className = "hak_btn hak_active_btn hak_btn_left";
         hak.className = "hak_btn hak_deactive_btn hak_btn_right";
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cv.className = "hak_btn hak_deactive_btn hak_btn_left";
         hak.className = "hak_btn hak_active_btn hak_btn_rigt";
 
-        main.style.height = "50vh";
+        main.style.height = "60vh";
 
         if(scren_width < 850){
             cv_art.style.width = "0%";
