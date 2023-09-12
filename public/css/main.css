@@ -273,8 +273,7 @@ nav{
         font-size: 4vh; }
       .card-section .card .text-content p, .section-1 .card .text-content p {
         line-height: 1.5;
-        margin-bottom: 10px;
-        text-transform: capitalize; }
+        margin-bottom: 10px; }
       .card-section .card .text-content .links, .section-1 .card .text-content .links {
         position: absolute;
         right: 0;
