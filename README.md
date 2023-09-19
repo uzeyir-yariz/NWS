@@ -1,5 +1,7 @@
 # NWS
 
+[web site linki](https://nws-8b76d.web.app/index.html)
+
 > Next_Web_Solutions
 
 ## kullanılan özellikler
