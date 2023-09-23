@@ -1,47 +1,38 @@
-// Projelerin bilgilerini içeren bir dizi
-const projects = [
-    /* {
-        id: 0,
-        imageSrc: "https://picsum.photos/200",
-        name: "Proje 1 Başlığı",
-        href: "#",
-        description: "Proje 1 açıklaması burada bulunacak.",
-        labels: ["javascript", "C-sharp"]
-    }, */
-];
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Projeleri oluşturup sayfaya ekleyen fonksiyon
-function createProjectElement(project) {
-    const projectElement = document.createElement("article");
-    projectElement.id = project.id.toString();
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCvt9j5NilGWFl2C2Y67uKhuhKCKS_OeeA",
+  authDomain: "nws-8b76d.firebaseapp.com",
+  projectId: "nws-8b76d",
+  storageBucket: "nws-8b76d.appspot.com",
+  messagingSenderId: "461109278827",
+  appId: "1:461109278827:web:4a03a1fbf5e2b30dc6192e",
+  measurementId: "G-2YS02K1RPB"
+};
 
-    projectElement.innerHTML = `
-        <figure><img src="${project.imageSrc}" alt="${project.name}"></figure>
-        <article>
-            <div>
-                <h5>${project.name}</h5>
-                <p>${project.description}</p>
-                <a href="${project.href}" class="link">daha fazla</a>
-            </div>
-            <!-- labels -->
-            <div class="label-contanier">${project.labels.map(label => `<span class="${label}">${label}</span>`).join('')}</div>
-        </article>
-    `;
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
-    return projectElement;
-}
+// Firestore koleksiyon adınızı buraya ekleyin
+const collectionName = "products";
 
-// Projeleri oluşturup sayfaya ekleyin
-const projectContainer = document.getElementById("projectContainer");
-
-if (projects.length === 0) {
-    const emptyMessage = document.createElement("p");
-    emptyMessage.style.height = "100vh"
-    emptyMessage.textContent = "Henüz projeler eklenmemiş.";
-    projectContainer.appendChild(emptyMessage);
-} else {
-    projects.forEach(project => {
-        const projectElement = createProjectElement(project);
-        projectContainer.appendChild(projectElement);
+// Firestore koleksiyonundan verileri konsola yazdırma işlemi
+db.collection(collectionName)
+  .get()
+  .then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+      const data = doc.data();
+      console.log("Belge ID:", doc.id);
+      console.log("Veri:", data);
     });
-}
+  })
+  .catch((error) => {
+    console.error("Veri çekme hatası:", error);
+  });

@@ -78,11 +78,26 @@ const icons_objects = {
     }
 };
 
+
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
 function fill_arma() {
     let section_3 = document.getElementById("section_3");
-    
-    for (let i = 1; i <= Object.keys(icons_objects).length; i++) {
-        const icon = icons_objects[`icon_${i}`];
+
+    // Icons_objects objesini diziye dönüştürün
+    const iconArray = Object.values(icons_objects);
+
+    // Iconları rastgele sıralayın
+    shuffleArray(iconArray);
+
+    for (let i = 0; i < iconArray.length; i++) {
+        const icon = iconArray[i];
 
         const arma = document.createElement("div");
         const img = document.createElement("img");
@@ -92,7 +107,7 @@ function fill_arma() {
             arma.classList.add("arma", "gold");
         } else if (icon.top === "silver") {
             arma.classList.add("arma", "silver");
-        } else if(icon.top === "bronz") { 
+        } else if (icon.top === "bronz") {
             arma.classList.add("arma", "bronze");
         }
 
@@ -107,6 +122,13 @@ function fill_arma() {
         };
     }
 }
+
+// * bu kod tüm elementlerin yüklenmesini sağlayacaktır
+document.addEventListener("DOMContentLoaded", function () {
+    fill_arma();
+    animate_speed();
+});
+
 
 
 // * bu kod tüm elementlerin yüklenmesini sağlayacaktır

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const typedText = document.getElementById("typed-text");
     const NWS = document.getElementById("NWS");
-    const initialText = "welcome ";
+    const initialText = "hoşgeldiniz ";
     const text = initialText.trim();
     let index = 0;
 
@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    function typeNWS() {
+    // * bu bir süre durduruldu daha sonra tekrar açılabilir yada değiştirilebilir
+    /* function typeNWS() {
         const nwsText = "NWS";
         let nwsIndex = 0;
 
@@ -29,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 clearInterval(typingInterval);
             }
         }, 150); // Yazma hızını buradan ayarlayabilirsiniz
-    }
+    } */
 
     let typingTimeout = setTimeout(() => {
         typingInterval = setInterval(typeText, 100);

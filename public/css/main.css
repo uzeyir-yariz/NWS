@@ -691,6 +691,7 @@ nav{
       .hakkımızda_main .hak_art_contanier .hak_art .proje_hakkında {
         padding: 1rem; }
         .hakkımızda_main .hak_art_contanier .hak_art .proje_hakkında summary {
+          cursor: pointer;
           color: #f59b08;
           margin-bottom: 15px; }
         .hakkımızda_main .hak_art_contanier .hak_art .proje_hakkında p {
