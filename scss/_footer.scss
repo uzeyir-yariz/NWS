@@ -135,14 +135,12 @@ footer{
                     background-color: $bg_color_secondary;
                     outline: none;
                     border: none;
-                    font-size: 19px;
                     color: $text_color_normal;
                 } button{
                     position: absolute;
                     color: $text_color_title;
                     background-color: $special_icons_color_default;
                     padding: 15px;
-                    font-size: 19px;
                     right: 0;
                     outline: none;
                     border: none;
@@ -207,8 +205,6 @@ footer{
 
 @media(max-width: 700px){
     footer{
-
-        // TODO: yazıların biraz daha büyük olması gerekli
         display: flex;
         gap: 15px;
         flex-direction: column;
@@ -289,6 +285,10 @@ footer{
                     font-size: 4vw;
                 } span{
                     margin-top: 30px;
+
+                    input{
+                        width: 80vw;
+                    }
                 }
             }
         }
@@ -305,4 +305,22 @@ footer{
             }}}}
         }
     }
+
+    .up-arrow{
+        bottom: 5px;
+        right: 5px;
+        padding: 0.5rem;
+    }
+}
+
+.up-arrow{
+    cursor: pointer;
+    position: fixed;
+    bottom: 25px;
+    right:  25px;
+    background-color: $bg_color_base;
+    padding: 0.7rem;
+    transition: 500ms all ease-in-out;
+    opacity: 0.7;
+    i{}
 }
