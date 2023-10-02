@@ -1,25 +1,43 @@
-const fetch = require('node-fetch');
+const admin = require('firebase-admin');
+const fs = require('fs');
+const path = require('path'); // path modülünü ekleyin
 
+// Firebase servis hesabı anahtar dosyasının yolu (serviceAccountKey.json dosyasının yolunu doğru şekilde belirttiğinizden emin olun)
+const serviceAccount = require('./serviceAccountKey.json');
+
+// Firebase yapılandırma
 const firebaseConfig = {
-    apiKey: "AIzaSyCvt9j5NilGWFl2C2Y67uKhuhKCKS_OeeA",
-    authDomain: "nws-8b76d.firebaseapp.com",
-    projectId: "nws-8b76d",
-    storageBucket: "nws-8b76d.appspot.com",
-    messagingSenderId: "461109278827",
-    appId: "1:461109278827:web:4a03a1fbf5e2b30dc6192e",
-    measurementId: "G-2YS02K1RPB"
-  };
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: 'https://nws-8b76d.firebaseio.com' // Firebase projenizin URL'si
+};
 
-const collectionName = 'your-collection-name'; // Koleksiyon adını buraya ekleyin
-const apiKey = firebaseConfig.apiKey;
+// Firebase başlatma
+admin.initializeApp(firebaseConfig);
 
-const firestoreUrl = `https://firestore.googleapis.com/v1/projects/${firebaseConfig.projectId}/databases/(default)/documents/${collectionName}?key=${apiKey}`;
+// Firestore örneği alma
+const firestore = admin.firestore();
 
-fetch(firestoreUrl)
-  .then((response) => response.json())
-  .then((data) => {
-    console.log(JSON.stringify(data, null, 2));
-  })
-  .catch((error) => {
-    console.error('Veriler alınamadı:', error);
+// Firestore'den verileri çekme
+firestore.collection('project').get().then((querySnapshot) => {
+  const veriler = [];
+  querySnapshot.forEach((doc) => {
+    veriler.push(doc.data()); 
   });
+
+  // Verileri JSON formatına dönüştürme
+  const jsonData = JSON.stringify(veriler);
+
+  // JSON dosyasının yolunu belirtin (public klasörü içinde)
+  const jsonDosyaYolu = path.join(__dirname, 'public', 'database', 'project.json');
+
+  // JSON dosyasına yazma
+  fs.writeFile(jsonDosyaYolu, jsonData, (err) => {
+    if (err) {
+      console.error('JSON dosyasına yazma hatası:', err);
+    } else {
+      console.log('Veriler başarıyla JSON dosyasına kaydedildi.');
+    }
+  });
+}).catch((error) => {
+  console.error('Firestore verileri alınırken bir hata oluştu:', error);
+});
