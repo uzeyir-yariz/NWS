@@ -422,7 +422,7 @@ p {
             margin-right: 10px;
             margin-bottom: 3px; }
 
-.project_container article article .label-contanier {
+.project_container article .label-container {
   background-color: rgba(84, 84, 84, 0.3);
   padding: 0.5rem;
   border-radius: 15px;
@@ -432,66 +432,66 @@ p {
   justify-content: center;
   gap: 30px;
   row-gap: 15px; }
-  .project_container article article .label-contanier span {
+  .project_container article .label-container span {
     background-color: transparent;
     width: fit-content;
     cursor: pointer;
     padding: 0.15rem;
     align-self: center; }
-  .project_container article article .label-contanier .html {
+  .project_container article .label-container .html {
     background-color: #ffa60070;
     border-radius: 15px;
     border: solid #FFA500;
     transition: 500ms all ease-in-out; }
-    .project_container article article .label-contanier .html:hover {
+    .project_container article .label-container .html:hover {
       background-color: #ffa600;
       border: solid white; }
-  .project_container article article .label-contanier .css {
+  .project_container article .label-container .css {
     background-color: #0070BA70;
     border-radius: 15px;
     border: solid #0070BA;
     transition: 500ms all ease-in-out; }
-    .project_container article article .label-contanier .css:hover {
+    .project_container article .label-container .css:hover {
       background-color: #0070BA;
       border: solid white; }
-  .project_container article article .label-contanier .scss {
+  .project_container article .label-container .scss {
     background-color: #FF69B470;
     border-radius: 15px;
     border: solid #FF69B4;
     transition: 500ms all ease-in-out; }
-    .project_container article article .label-contanier .scss:hover {
+    .project_container article .label-container .scss:hover {
       background-color: #FF69B4;
       border: solid white; }
-  .project_container article article .label-contanier .javascript {
+  .project_container article .label-container .javascript {
     background-color: #F7DF1E70;
     border-radius: 15px;
     border: solid #F7DF1E;
     transition: 500ms all ease-in-out; }
-    .project_container article article .label-contanier .javascript:hover {
+    .project_container article .label-container .javascript:hover {
       background-color: #F7DF1E;
       border: solid white; }
-  .project_container article article .label-contanier .C-sharp {
+  .project_container article .label-container .C-sharp {
     background-color: #17860070;
     border-radius: 15px;
     border: solid #178600;
     transition: 500ms all ease-in-out; }
-    .project_container article article .label-contanier .C-sharp:hover {
+    .project_container article .label-container .C-sharp:hover {
       background-color: #178600;
       border: solid white; }
-  .project_container article article .label-contanier .tailwind {
+  .project_container article .label-container .tailwind {
     background-color: #06B6D470;
     border-radius: 15px;
     border: solid #06B6D4;
     transition: 500ms all ease-in-out; }
-    .project_container article article .label-contanier .tailwind:hover {
+    .project_container article .label-container .tailwind:hover {
       background-color: #06B6D4;
       border: solid white; }
-  .project_container article article .label-contanier .node {
+  .project_container article .label-container .node {
     background-color: #8CC84B70;
     border-radius: 15px;
     border: solid #8CC84B;
     transition: 500ms all ease-in-out; }
-    .project_container article article .label-contanier .node:hover {
+    .project_container article .label-container .node:hover {
       background-color: #8CC84B;
       border: solid white; }
 
@@ -878,9 +878,9 @@ footer {
     footer .row-1 {
       display: grid; }
       footer .row-1 span i {
-        font-size: 9vw; }
+        font-size: 5vw; }
       footer .row-1 span span h6 {
-        font-size: 6vw; }
+        font-size: 3vw; }
       footer .row-1 span span p {
         font-size: 3vw; }
     footer .row-2 {
@@ -898,25 +898,25 @@ footer {
         footer .row-2 .abo img {
           min-height: 20vw; }
         footer .row-2 .abo p {
-          font-size: 4vw;
+          font-size: 3vw;
           text-align: center; }
         footer .row-2 .abo h6 {
-          font-size: 7vw; }
+          font-size: 5vw; }
         footer .row-2 .abo span a i {
-          font-size: 8vw; }
+          font-size: 7vw; }
       footer .row-2 .use {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center; }
         footer .row-2 .use h6 {
-          font-size: 6vw; }
+          font-size: 4vw; }
         footer .row-2 .use hr {
           width: 100%; }
         footer .row-2 .use ul {
           width: 100%; }
           footer .row-2 .use ul li a {
-            font-size: 6vw; }
+            font-size: 4vw; }
       footer .row-2 .sub {
         display: flex;
         flex-direction: column;
@@ -924,12 +924,12 @@ footer {
         align-items: center;
         text-align: center; }
         footer .row-2 .sub h6 {
-          font-size: 6vw; }
+          font-size: 4vw; }
         footer .row-2 .sub hr {
           align-self: center;
           width: 50%; }
         footer .row-2 .sub p {
-          font-size: 4vw; }
+          font-size: 3vw; }
         footer .row-2 .sub span {
           margin-top: 30px; }
           footer .row-2 .sub span input {
