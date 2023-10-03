@@ -52,7 +52,7 @@ function createProjectElement(project) {
       <article>
           <div>
               <h5>${project.name}</h5>
-              <p>${project.description}</p>
+              <p class="text-slice">${project.description}</p>
               <a href="${project.href}" class="link">Daha fazla</a>
           </div>
           <!-- labels -->

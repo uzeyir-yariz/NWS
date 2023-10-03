@@ -11,6 +11,12 @@ html {
 body {
   background-color: #1d1d1d; }
 
+.text-slice {
+  height: 3.5em !important;
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
 ul {
   list-style: none; }
 
@@ -23,6 +29,14 @@ ul {
 @media (max-width: 700px) {
   .page_logo {
     height: 15vw; } }
+
+.link {
+  color: #d2b48c;
+  transition: 500ms all;
+  border-bottom: solid 1px rgba(255, 255, 255, 0); }
+  .link:hover {
+    color: #90f508;
+    border-bottom: solid 1px #90f508; }
 
 h1, h2, h3, h4, h5, h6, a, img, span, summary, label {
   font-family: "Roboto";
@@ -175,14 +189,6 @@ p {
   border-bottom: solid 1px rgba(255, 255, 255, 0); }
   .deactive_link:hover {
     border-bottom: solid 1px #e9e9e6; }
-
-.link {
-  color: #e9e9e6;
-  transition: 500ms all;
-  border-bottom: solid 1px rgba(255, 255, 255, 0); }
-  .link:hover {
-    color: #90f508;
-    border-bottom: solid 1px #90f508; }
 
 .card-section, .section-1 {
   display: flex;
@@ -379,10 +385,11 @@ p {
   margin-top: 50px;
   margin-bottom: 50px; }
   .project_main .project_container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
     gap: 32px;
     flex-wrap: wrap;
-    margin-top: 120px;
+    margin-top: 160px;
     justify-content: center;
     align-items: center; }
     .project_main .project_container article {
@@ -399,7 +406,8 @@ p {
         justify-content: center; }
         .project_main .project_container article figure img {
           border-radius: 15px;
-          width: 25vw; }
+          width: 100%;
+          height: 25vh; }
       .project_main .project_container article article {
         display: flex;
         flex-direction: column;
@@ -426,15 +434,14 @@ p {
   background-color: rgba(84, 84, 84, 0.3);
   padding: 0.5rem;
   border-radius: 15px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  align-content: center;
-  justify-content: center;
-  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   row-gap: 15px; }
   .project_container article .label-container span {
+    margin-left: 5px;
+    margin-right: 5px;
     background-color: transparent;
-    width: fit-content;
     cursor: pointer;
     padding: 0.15rem;
     align-self: center; }
@@ -494,6 +501,19 @@ p {
     .project_container article .label-container .node:hover {
       background-color: #8CC84B;
       border: solid white; }
+
+@media (max-width: 700px) {
+  .project_main {
+    width: 100%; }
+    .project_main .project_container {
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      justify-content: center; }
+      .project_main .project_container article figure img {
+        border-radius: 15px;
+        width: 100%; } }
 
 .hakkımızda_main {
   margin-top: 160px;
@@ -737,7 +757,7 @@ footer {
           text-transform: none; }
         footer .row-1 span span p {
           font-weight: 100;
-          text-transform: capitalize;
+          text-transform: lowercase;
           opacity: 0.5;
           font-size: 1.4vw; }
   footer .row-2 {

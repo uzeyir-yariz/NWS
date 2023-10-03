@@ -144,3 +144,4 @@ function animate_speed(){
         element.style.animationDelay = `${index * 1}s`; // Başlatma gecikmesini ayarlayın
     });
 }
+

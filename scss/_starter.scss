@@ -16,6 +16,13 @@ body{
   // daha uzun gözükmesi için uzatılmış
 }
 
+.text-slice {
+  height: 3.5em !important;
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 ul{
   list-style: none;
 } .page_logo{
@@ -29,6 +36,17 @@ ul{
 @media (max-width: 700px){
   .page_logo{
     height: 15vw;
+  }
+}
+
+.link{
+  color: $special_links_color_idle;
+  transition: 500ms all;
+  border-bottom: solid 1px rgba(255, 255, 255, 0);
+
+  &:hover{
+      color: $special_links_color_active;
+      border-bottom: solid 1px $special_links_color_active;
   }
 }
 
