@@ -1,6 +1,6 @@
 # NWS
 
-[web site linki](https://nws-8b76d.web.app/index.html)
+[web site linki](https://uzeyir-yariz.com.tr/)
 
 > Next_Web_Solutions
 
