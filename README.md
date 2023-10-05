@@ -21,6 +21,10 @@
 - JS animation
 - scss varibles
 
-## run the css converter
+### run the css converter
 
     npm run scss
+
+### dowland to moduls
+
+    npm i
