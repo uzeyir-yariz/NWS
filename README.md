@@ -6,14 +6,14 @@
 
 ## kullanılan özellikler
 
-### kullanılan diller
+## kullanılan diller
 
 - html
 - css (scss converter)
 - scss (scss converter)
 - JS
 
-### kullanılan teknolojiler
+## kullanılan teknolojiler
 
 - Jquery 
 - npm scss converter
@@ -21,17 +21,16 @@
 - JS animation
 - scss varibles
 
-### run the css converter
+## run the css converter
 
     npm run scss
 
-### dowland to moduls
+## dowland to moduls
 
     npm i
 
----
 
-### eğer başka bir yerde firebase deploy yapman gerekirse 
+## firebase to deploy 
     
     Set-ExecutionPolicy Unrestricted -Scope CurrentUser
 
@@ -59,4 +58,13 @@
 
     Set-ExecutionPolicy Restricted -Scope CurrentUser
 
-her şey bittikten sonra kapıyı kapatmayı unutma
+its fnish ? close the all door
+
+use do upload/dowlnad firestore ? use the  
+
+    npm install firebase-admin
+
+## admin panel open
+
+    node server.js
+
