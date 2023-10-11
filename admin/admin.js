@@ -2,7 +2,7 @@
 
 document.getElementById('data_pull_project').addEventListener('click', function() {
     // Verileri çekmek için "/data" yoluna istek gönder
-    fetch('/data')
+    fetch('/data_project')
       .then((response) => response.json())
       .then((data) => {
         if (data.error) {
@@ -15,4 +15,8 @@ document.getElementById('data_pull_project').addEventListener('click', function(
         console.error('İstek sırasında bir hata oluştu:', error);
       });
   });
+
+
+
+
   

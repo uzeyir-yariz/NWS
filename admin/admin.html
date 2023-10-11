@@ -9,7 +9,53 @@
 </head>
 <body>
     <h1>admin paneli</h1>
+
     <input type="button" value="verileri çek" id="data_pull_project">
+
+    <button id="verileriGoster">Verileri Göster</button>
+    <div id="veriTablosu"></div>
+
+    <script>
+        const verileriGosterButton = document.getElementById('verileriGoster');
+        const veriTablosuDiv = document.getElementById('veriTablosu');
+    
+        verileriGosterButton.addEventListener('click', () => {
+            fetch('/data_project') // Sunucudan verileri çek
+                .then((response) => response.json())
+                .then((data) => {
+                    const veriler = data.veriler;
+                    // Verileri işleyip tabloyu görüntüle
+                    const tabloHTML = `
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Başlık</th>
+                                    <th>Açıklama</th>
+                                    <th>Link</th>
+                                    <th>Fotoğraf Linki</th>
+                                    <th>Etiketler</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${veriler((veri) => `
+                                    <tr>
+                                        <td>${veri.başlık}</td>
+                                        <td>${veri.açıklama}</td>
+                                        <td>${veri.link}</td>
+                                        <td>${veri.fotoğraf}</td>
+                                        <td>${veri.labels.map((label) => `<td>${label}</td>`).join('')}</td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    `;
+    
+                    veriTablosuDiv.innerHTML = tabloHTML;
+                }).catch((error) => {
+                    console.error('Verileri alma hatası:', error);
+                });
+        });
+    </script>
     
     <script src="admin.js"></script>
 </body>
