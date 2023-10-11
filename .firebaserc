@@ -1,7 +1,8 @@
 {
   "projects": {
     "default": "nws-8b76d",
-    "firestore": "nws-8b76d"
+    "firestore": "nws-8b76d",
+    "nws": "nws-8b76d"
   },
   "targets": {},
   "etags": {}

@@ -28,3 +28,35 @@
 ### dowland to moduls
 
     npm i
+
+---
+
+### eğer başka bir yerde firebase deploy yapman gerekirse 
+    
+    Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+
+---
+
+    npm install -g firebase-tools
+
+---
+
+    firebase login
+
+---
+
+    firebase use --add
+
+---
+
+    firebase deploy
+    
+---
+
+    firebase logout
+
+---
+
+    Set-ExecutionPolicy Restricted -Scope CurrentUser
+
+her şey bittikten sonra kapıyı kapatmayı unutma
