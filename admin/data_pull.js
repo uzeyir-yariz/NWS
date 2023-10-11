@@ -16,7 +16,3 @@ document.getElementById('data_pull_project').addEventListener('click', function(
       });
   });
 
-
-
-
-  
