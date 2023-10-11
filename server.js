@@ -20,7 +20,7 @@ admin.initializeApp(firebaseConfig);
 const firestore = admin.firestore();
 
 // Sunucu kök dizinindeki "public" klasörünü istemcilere sun
-app.use(express.static('public'));
+app.use(express.static('admin'));
 
 // Ana sayfayı (admin.html) gönder
 app.get('/', (req, res) => {
