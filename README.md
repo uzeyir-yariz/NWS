@@ -21,6 +21,8 @@
 - JS opject
 - JS animation
 - scss varibles
+- firestore
+- firehosting
 
 ## run the css converter
 
