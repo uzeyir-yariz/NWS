@@ -12,6 +12,7 @@
 - css (scss converter)
 - scss (scss converter)
 - JS
+- node.js
 
 ## kullanılan teknolojiler
 
