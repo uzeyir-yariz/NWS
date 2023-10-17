@@ -7,7 +7,7 @@ const verileriGosterButton = document.getElementById('verileriGoster');
                 .then((data) => {
                     const veriler = data.veriler;
                     // Verileri işleyip tabloyu görüntüle
-                    const tabloHTML = `
+                    let tabloHTML = `
                     <table>
                         <thead>
                             <tr>
@@ -19,23 +19,31 @@ const verileriGosterButton = document.getElementById('verileriGoster');
                             </tr>
                         </thead>
                         <tbody>
-                            ${veriler.map((veri) => `
-                                <tr>
-                                    <td>${veri[0].name}</td>
-                                    <td>${veri[0].description}</td>
-                                    <td>${veri[0].href}</td>
-                                    <td>${veri[0].imageSrc}</td>
-                                    <td>${veri[0].labels.map((label) => `<td>${label}</td>`).join('')}</td>
-                                </tr>
-                            `).join('')}
+                    `;
+                    
+                    for (let i = 0; i < veriler.length; i++) {
+                        const veri = veriler[i];
+                        tabloHTML += `
+                            <tr>
+                                <td>${veri.name}</td>
+                                <td>${veri.description}</td>
+                                <td>${veri.href}</td>
+                                <td>${veri.imageSrc}</td>
+                                <td>${veri.labels.join(', ')}</td>
+                            </tr>
+                        `;
+                    }
+        
+                    tabloHTML += `
                         </tbody>
                     </table>
                     `;
-
+        
                     console.log(veriler);
-    
+        
                     veriTablosuDiv.innerHTML = tabloHTML;
                 }).catch((error) => {
                     console.error('Verileri alma hatası:', error);
                 });
         });
+        
