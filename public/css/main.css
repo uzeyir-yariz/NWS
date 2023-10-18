@@ -65,11 +65,12 @@ p {
 
 .header {
   height: 100vh;
-  background-image: url("https://github.com/uzeyir-yariz/NWS/blob/main/images/index%20picture/main_img.png?raw=true");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
-  .header h1 {
+  background-position: center center;
+  position: relative;
+  overflow: hidden; }
+  .header .h1 {
     display: flex;
     height: 100%;
     width: 100%;
@@ -77,12 +78,19 @@ p {
     font-size: 10vw;
     align-items: center;
     justify-content: center;
-    margin-top: -5%; }
-    .header h1 .NWS {
-      margin-left: 15px;
-      font-style: italic;
-      font-weight: 100;
-      color: chartreuse; }
+    margin-top: -5%;
+    letter-spacing: 5px;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 5px white;
+    /* Chrome ve Safari için */
+    text-stroke: 5px white;
+    /* Diğer tarayıcılar için */
+    /* .NWS{
+            margin-left: 15px;
+            font-style: italic;
+            font-weight: 100;
+            color: $text_color_special;
+        } */ }
 
 .navbar {
   display: flex;
@@ -102,6 +110,11 @@ p {
       gap: 32px; }
 
 @media (max-width: 700px) {
+  .h1 {
+    -webkit-text-stroke: 2px white !important;
+    /* Chrome ve Safari için */
+    text-stroke: 2px white !important;
+    /* Diğer tarayıcılar için */ }
   .navbar {
     top: -50px;
     width: 100% !important; }
@@ -147,7 +160,25 @@ p {
   .overlay-close-btn {
     display: block !important; }
   .overlay-open-btn {
-    display: block !important; } }
+    display: block !important; }
+  .svg_index {
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative; }
+    .svg_index span {
+      top: 60px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      justify-content: space-around;
+      align-items: center;
+      position: absolute; }
+      .svg_index span h4 {
+        font-size: 100% !important; } }
 
 .overlay-close-btn {
   cursor: pointer;
@@ -189,6 +220,41 @@ p {
   border-bottom: solid 1px rgba(255, 255, 255, 0); }
   .deactive_link:hover {
     border-bottom: solid 1px #e9e9e6; }
+
+.column_container {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+  display: grid;
+  overflow: hidden;
+  margin: auto;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace; }
+  .column_container .random_column {
+    font-size: 100%;
+    letter-spacing: 15px;
+    color: rgba(127, 255, 0, 0.2);
+    transition: color 500ms ease-in-out; }
+    .column_container .random_column:hover {
+      background-color: red; }
+
+.svg_index {
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative; }
+  .svg_index span {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute; }
+    .svg_index span h4 {
+      font-size: 200%; }
 
 .card-section, .section-1 {
   display: flex;
@@ -730,7 +796,8 @@ p {
 footer {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  background-color: #1d1d1d; }
   footer hr {
     align-self: center;
     width: 90%; }
