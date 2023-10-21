@@ -129,8 +129,6 @@ document.addEventListener("DOMContentLoaded", function () {
     animate_speed();
 });
 
-
-
 // * bu kod tüm elementlerin yüklenmesini sağlayacaktır
 document.addEventListener("DOMContentLoaded", function () {
     fill_arma();

@@ -1,5 +1,39 @@
 @import 'scss/_varible.scss';
 
+
+.svg_index{
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    margin-bottom: -25px;
+    flex-direction: column;
+    position: relative;
+
+    span{
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+
+        div{
+            font-size: 200%;
+            display: flex;
+            justify-content: space-around;
+            gap: 50px;
+            a{
+                border-bottom: solid 2px rgba(0, 0, 0, 0);
+                transition: 500ms all ease-in-out;
+                color: $special_links_color_deactive;
+                &:hover{border-bottom: solid 2px $special_links_color_active; color: $special_links_color_active;}
+            }
+        }
+        h4{font-size: 200%;}
+    }
+}
+
 .card-section, .section-1{
     display: flex;
     flex-direction: column;
@@ -128,7 +162,6 @@
     cursor: pointer;
     transition: all 500ms ease-in-out;
     align-items: center;
-    margin-bottom: 25px;
 
     .arma{
         display: flex;
@@ -159,7 +192,7 @@
         background-color: $bg_color_secondary;
     }
     /* resimler */
-    .gold {background-image:    url('https://github.com/uzeyir-yariz/NWS/blob/main/images/arma/gold.png?raw=true');}
+    .gold   {background-image:    url('https://github.com/uzeyir-yariz/NWS/blob/main/images/arma/gold.png?raw=true');}
     .silver {background-image:  url('https://github.com/uzeyir-yariz/NWS/blob/main/images/arma/silver.png?raw=true');}
     .bronze {background-image:  url('https://github.com/uzeyir-yariz/NWS/blob/main/images/arma/bronze.png?raw=true');}
 }
@@ -173,9 +206,31 @@
     }
 }
 
-
-
 @media screen and (max-width: 700px) {
+
+    .svg_index{
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        span{
+            top: 60px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+
+            h4{
+                font-size: 100% !important;
+            }
+        }
+    }
 
     .slide-right{
         align-items: center;
@@ -235,6 +290,4 @@
     background: url("https://github.com/uzeyir-yariz/NWS/blob/main/images/index%20picture/blog_makaleler_img.png?raw=true");
 }
 
-.index{
-    background: linear-gradient(to bottom, #000, $bg_color_base);
-}
+.index{background: linear-gradient(to bottom, #000, $bg_color_base);}

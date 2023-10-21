@@ -19,7 +19,6 @@
         font-size: 10vw;
         align-items: center;
         justify-content: center;
-        margin-top: -5%;
         letter-spacing: 5px;
         color: rgba(0, 0, 0, 0);
         -webkit-text-stroke: $special_web_kit_stroke_width $special_web_kit_stroke_color; /* Chrome ve Safari için */
@@ -123,31 +122,6 @@
     // nesnleri görünür hale getiriyor
     .overlay-close-btn {display: block !important;}
     .overlay-open-btn {display: block !important;}
-
-    .svg_index{
-    text-align: center;
-    margin: auto;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-
-    position: relative;
-
-    span{
-        top: 60px;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        justify-content: space-around;
-        align-items: center;
-        position: absolute;
-
-        h4{
-            font-size: 100% !important;
-        }
-    }
-}
 }
 
 // nesnleri görünmez hale getiriyor
@@ -215,38 +189,10 @@
     justify-content: center;
     font-family: "Courier New", Courier, monospace;
 
-
     .random_column{
         font-size: 100%;
         letter-spacing: 15px;
         color: rgba($text_color_special, 0.2);
-        transition: color 500ms ease-in-out;
-
-        &:hover{
-            background-color: red;
-        }
-    }
-} 
-
-.svg_index{
-    text-align: center;
-    margin: auto;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-
-    position: relative;
-
-    span{
-        display: flex;
-        width: 100%;
-        text-align: center;
-        justify-content: space-around;
-        align-items: center;
-        position: absolute;
-
-        h4{
-            font-size: 200%;
-        }
+        font-size: 100%;
     }
 }
