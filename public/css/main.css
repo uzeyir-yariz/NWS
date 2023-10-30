@@ -128,7 +128,7 @@ p {
     padding: 0;
     box-sizing: border-box;
     top: 0;
-    left: 0;
+    right: 0;
     width: 0;
     z-index: 1;
     overflow-x: hidden;
@@ -137,7 +137,7 @@ p {
     background-color: rgba(0, 0, 0, 0.9); }
     .overlay .overlay-close-btn {
       position: absolute;
-      top: 20px;
+      top: 40px;
       right: 45px; }
     .overlay .overlay-content {
       position: relative;
@@ -269,7 +269,8 @@ p {
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    max-width: 1200px;
+    min-width: 500px;
     margin-top: 20px;
     margin-bottom: 20px; }
     .card-section .card .text-content, .section-1 .card .text-content {
@@ -281,9 +282,8 @@ p {
         color: #f59b08;
         margin-bottom: 10px;
         margin-top: 10px;
-        font-size: 4vh; }
+        font-size: 200%; }
       .card-section .card .text-content p, .section-1 .card .text-content p {
-        line-height: 1.5;
         margin-bottom: 10px; }
       .card-section .card .text-content .links, .section-1 .card .text-content .links {
         position: absolute;
@@ -356,7 +356,7 @@ p {
   position: relative;
   overflow: hidden;
   gap: 50px;
-  height: 300px;
+  height: 150px;
   cursor: pointer;
   transition: all 500ms ease-in-out;
   align-items: center;
@@ -369,8 +369,8 @@ p {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    width: 15vw;
-    height: 15vw;
+    width: 125px;
+    height: 125px;
     position: absolute;
     left: -100%;
     animation: kaydir 10s linear infinite;
@@ -378,9 +378,10 @@ p {
     cursor: pointer;
     transition: 500ms ease-in-out all; }
     .section-3 .arma:hover {
-      transform: scale(1.5); }
+      transform: scale(1.1); }
     .section-3 .arma img {
-      width: 40%; }
+      width: 50px;
+      height: auto; }
   .section-3:hover .arma {
     animation-play-state: paused; }
   .section-3:hover {
@@ -434,9 +435,6 @@ p {
       font-size: 5vw; }
   .github-stats {
     width: 75% !important; }
-  .arma {
-    width: 30vw !important;
-    height: 30vw !important; }
   @keyframes kaydir {
     0% {
       left: -150%; }
