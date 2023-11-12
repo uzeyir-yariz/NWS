@@ -171,8 +171,10 @@
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center;
+
         width:  15vw;
         height: 15vw;
+        
         position: absolute;
         left: -100%;
         animation: kaydir 10s linear infinite;
@@ -225,10 +227,6 @@
             justify-content: space-around;
             align-items: center;
             position: absolute;
-
-            h4{
-                font-size: 100% !important;
-            }
         }
     }
 
@@ -291,3 +289,14 @@
 }
 
 .index{background: linear-gradient(to bottom, #000, $bg_color_base);}
+
+@media screen and (min-width: 1200px){
+    .card-section > .card{
+        width: 1200px;
+    }
+
+    .section-3 > .arma{
+        width: 700px  !important;
+        height: 700px !important;
+    }
+}

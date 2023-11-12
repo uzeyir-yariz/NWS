@@ -415,8 +415,6 @@ p {
       justify-content: space-around;
       align-items: center;
       position: absolute; }
-      .svg_index span h4 {
-        font-size: 100% !important; }
   .slide-right {
     align-items: center;
     flex-direction: column; }
@@ -457,6 +455,13 @@ p {
 
 .index {
   background: linear-gradient(to bottom, #000, #1d1d1d); }
+
+@media screen and (min-width: 1200px) {
+  .card-section > .card {
+    width: 1200px; }
+  .section-3 > .arma {
+    width: 700px  !important;
+    height: 700px !important; } }
 
 .project_main {
   width: 100%;
