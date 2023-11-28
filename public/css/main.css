@@ -71,12 +71,13 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  position: relative;
-  overflow: hidden; }
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
   .header .h1 {
-    display: flex;
-    height: 100%;
-    width: 100%;
     text-align: center;
     font-size: 10vw;
     align-items: center;
@@ -205,21 +206,27 @@ p {
   .deactive_link:hover {
     border-bottom: solid 1px #e9e9e6; }
 
-.column_container {
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  position: fixed;
-  display: grid;
-  overflow: hidden;
-  margin: auto;
-  justify-content: center;
-  font-family: "Courier New", Courier, monospace; }
-  .column_container .random_column {
-    font-size: 100%;
-    letter-spacing: 15px;
-    color: rgba(127, 255, 0, 0.2);
-    font-size: 100%; }
+/* .column_container{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+    display: grid;
+    overflow: hidden;    
+    margin: auto;
+    justify-content: center;
+    font-family: "Courier New", Courier, monospace;
+
+    .random_column{
+        font-size: 100%;
+        letter-spacing: 15px;
+        color: rgba($text_color_special, 0.2);
+        font-size: 100%;
+    }
+} */
+.tenor-gif-embed {
+  width: 50%;
+  height: auto; }
 
 .svg_index {
   text-align: center;

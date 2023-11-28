@@ -1,85 +1,9 @@
 @import 'scss/_varible.scss';
 
-.timer_header,
-.timer_content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
+.clock_result {} 
 
-.timer_header {
-  position: relative;
-
-  .timer_title {
-    position: absolute;
-    margin-top: -7.5vw;
-    font-style: italic;
-    letter-spacing: 1.5vw;
-    font-size: 2.5vw;
-    opacity: 0.7;
-  }
-}
-
-.timer_content {
-  justify-content: center;
-  height: 100vh;
-  gap: 0.2vh;
-
-  .timer_clock_result {
-    font-size: 10vw;
-  }
-
-  .timer_clock {
-    opacity: 0.7;
-    font-size: 6.5vw;
-    word-spacing: 5vw;
-  }
-
-  .timer_NWS {
-    color: $text_color_special;
-    font-weight: lighter;
-    font-style: italic;
-    font-size: 15vw;
-    margin-top: 5vw;
-  }
-
-  .timer_summarys {
-    color: $text_color_normal;
-    display: flex;
-    gap: 10px;
-    font-size: 4vw;
-
-    .timer_summary {
-      text-transform: capitalize;
-      opacity: 0.6;
-      font-style: italic;
-      font-weight: 100;
-
-      &::first-letter {
-        color: $text_color_special;
-      }
-    }
-  }
-}
-
-// Mobil uyum için medya sorguları
-@media (max-width: 860px) {
-  .timer_header .timer_title {
-    margin-top: -15vw;
-    font-size: 5vw;
-  }
-
-  .timer_content .timer_clock_result {
-    font-size: 12vw;
-  }
-
-  .timer_content .timer_clock {
-    font-size: 8vw;
-  }
-
-  .timer_content .timer_NWS {
-    font-size: 17vw;
-    margin-top: 6vw;
-  }
+// kingpin meme
+.tenor-gif-embed{
+  width: 50%;
+  height: auto;
 }

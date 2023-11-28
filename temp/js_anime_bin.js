@@ -1,3 +1,7 @@
+// burada ki kodları bir süreliğne kaldırıyorum
+
+// <div class="column_container"></div>
+
 // Rastgele bir 1 ve 0 dizisi oluştur
 function generateRandomBinaryString(length) {
     let binaryString = '';
