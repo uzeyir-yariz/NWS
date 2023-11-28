@@ -1,9 +1,8 @@
 @import 'scss/_varible.scss';
 
-.clock_result {} 
-
-// kingpin meme
-.tenor-gif-embed{
-  width: 50%;
-  height: auto;
+.clock_result {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
