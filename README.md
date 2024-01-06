@@ -1,12 +1,10 @@
 # NWS
 
-[web site linki](https://uzeyir-yariz.com.tr/)
+[web site link](https://uzeyir-yariz.com.tr/)
 
 > Next_Web_Solutions
 
-## kullanılan özellikler
-
-## kullanılan diller
+## use 
 
 - html
 - css (scss converter)
@@ -14,7 +12,7 @@
 - JS
 - node.js
 
-## kullanılan teknolojiler
+## use technology
 
 - Jquery 
 - npm scss converter
