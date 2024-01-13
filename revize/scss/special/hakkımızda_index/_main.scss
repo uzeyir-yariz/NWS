@@ -1,0 +1,264 @@
+@import 'scss/_varible.scss';
+
+.hakkımızda_main{
+    margin-top: 160px;
+    margin-bottom: 50px;
+
+    .btn_contanier{
+        width: 100%;
+        background-color: rgba($bg_color_fourt, 0.2);
+        border-radius: 25px;
+        transform: scale(0.98);
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+
+        .hak_btn{
+            color: white;
+            background-color: $bg_color_five;
+            cursor: pointer;
+            width: 50%;
+            font-size: 200%;
+            text-transform: uppercase;
+            outline: none;
+            border: none;
+            padding: 0.5rem;
+            transition: 500ms all ease-in-out;
+
+            &:hover{
+                color: $special_links_color_active !important;
+                background-color: $bg_color_base !important;
+            }
+        }
+        .hak_btn_right{border-radius: 0 20px 20px 0;}
+        .hak_btn_left{border-radius: 20px 0 0 20px;}
+    }
+
+    .hak_art_contanier{
+        display: flex;
+        flex-direction: column;        
+        overflow-x: hidden;
+        position: relative;
+        height: 100%;
+        align-items: center;
+        
+        .hakım_art{
+            transition: 1s all ease-in-out;
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap;
+
+            h2{padding: 1rem; color: $text_color_title;}
+            hr{opacity: 0.5;}
+        }
+
+        .cv_art{
+            background-color: $bg_color_fourt;
+            width: 0%;
+
+            .short_about{
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                
+                span{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+                    border-bottom: solid 1px rgba(white, 0.4);
+                    padding: 0.5rem;
+
+
+                    h4{
+                        text-align: end;
+                    }
+                } p{
+                    margin-top: 15px;
+                    text-align: center;
+                    overflow: hidden;
+                    opacity: 0.7;
+                }
+            }
+
+            .short_contact{
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+
+                span{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+                    border-bottom: solid 1px rgba(white, 0.4);
+                    padding: 0.5rem;
+
+                    a{
+                        text-align: end;
+                        font-size: 90%;
+                    }
+
+                    ul{
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-around;
+                    }
+                }
+            }
+
+            .short_media{
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 100%;
+
+                h4{
+                    margin-bottom: 15px;
+                }
+                span{ul{
+                    border-bottom: solid rgba(white, 0.5) 1px;
+                    border-top: solid rgba(white, 0.5) 1px;
+                    padding: 0.3rem;
+                    display: flex;
+                    justify-content: space-around;
+                }}
+            }
+
+            .short_langue{
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 100%;
+
+                h4{margin-bottom: 15px;}
+                
+            }
+
+            .short_small_about{
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 100%;
+
+                h4{margin-bottom: 1rem;}
+
+                .short_project{
+                    text-align: center;
+                    padding: 0.5rem;
+                    border-top: solid rgba(white, 0.5) 1px;
+                    border-bottom: solid rgba(white, 0.5) 1px;
+                    a{font-size: 125%;}
+                }
+            }
+        }
+
+        .hak_art{
+            background-color: $bg_color_five;
+            width: 0%;
+
+            .benim_hakkımda{
+                padding: 1rem;  
+
+                summary{
+                    color: $text_color_title;
+                    margin-bottom: 15px;
+                } p{
+                    white-space: normal;
+                    letter-spacing: 1px;
+                    word-spacing: 2px;
+                    margin-bottom: 25px;
+                }
+            }
+
+            .proje_hakkında{
+                padding: 1rem;
+
+                summary{
+                    cursor: pointer;
+                    color: $text_color_title;
+                    margin-bottom: 15px;
+                } p{
+                    white-space: normal;
+                    letter-spacing: 1px;
+                    word-spacing: 2px;
+                    margin-bottom: 25px;
+                }   a{
+                    margin-left: 15px;
+                    text-decoration: overline;
+                }
+            }
+        }
+    }
+
+
+}
+
+.hak_active_btn{color: $special_links_color_active !important; background-color: $bg_color_base !important;}
+.hak_deactive_btn{color: $special_links_color_deactive !important;}
+
+@media (max-width: 800px){
+    .hakkımızda_main{
+
+        .btn_contanier{
+            display: flex;
+            flex-direction: column;
+            
+            .hak_btn{
+                width: 100%;
+                padding: 1rem;
+            }
+            .hak_btn_right{border-radius: 0 0 20px 20px;}
+            .hak_btn_left{border-radius: 20px 20px 0 0;}
+
+            .hak_left{display: none;}
+            .hak_right{display: none;}
+        }
+    }
+
+    .short_media{
+        text-align: center;
+        span{ul{
+            border-bottom: solid rgba(white, 0.5) 1px;
+            border-top: solid rgba(white, 0.5) 1px;
+            padding: 0.3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            justify-content: space-around;
+        }}
+    }
+}
+
+.extrem_ul{
+    width: 100%;
+    h5{margin-bottom: 5px; margin-top: 30px; color: rgba($text_color_special, 0.9);}
+    ul{
+        width: 100%;
+        li{
+            font-size: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            border-bottom: solid rgba(white, 0.5) 1px;
+            padding: 0.4rem;
+            text-transform: none;
+            span{
+                font-size: 110%;
+                width: 100%;
+                text-align: end;
+                .yellow_star{
+                    color: rgba($special_star_color, 0.7);
+                }
+            }
+        }
+    }
+}
+
+.chance_hak{color: $special_icons_color_default;}
