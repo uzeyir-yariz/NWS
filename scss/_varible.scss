@@ -3,7 +3,9 @@
   // * text color
     $paragraph-text-color: #E9E9E6;
     $title-text-color: #F59B08;
-    $link-text-color: #7FFF00;
+    $special-text-color: #7FFF00;
+    $link-active: #90F508;
+    $link-deactive: #C5C5C5;
 
   // * bg-color 
     $bg-color-0: #131313;
@@ -12,4 +14,12 @@
     $bg-color-3: #272727;
     $bg-color-4: #545454;
 
-  // * 
+  // * button-color
+    $btn-color-def: #90F508;
+    $btn-color-hov: #B75EEE;
+    $btn-color-act: #9B08F5;
+    $btn-color-err: #FF2E2E;
+    $btn-color-not: #F59B08;
+  
+  // * special color
+    $hr-color: #979797;
