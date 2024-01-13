@@ -1,1 +1,14 @@
 @import '_reset.scss';
+@import '_varible.scss';
+
+// * body 
+body{
+    background-color: $bg-color-0;
+}
+
+// * make good text 
+
+.spe_title{
+    font-size: 50px;
+    font-family: $special-font;
+} 
