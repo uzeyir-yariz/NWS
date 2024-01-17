@@ -2,13 +2,20 @@
 @import '_varible.scss';
 
 // * body 
-body{
-    background-color: $bg-color-0;
-}
+body{background-color: $bg-color-0;}
 
 // * make good text 
+.spe_title{font-size: 50px; font-family: $special-font;}
 
-.spe_title{
-    font-size: 50px;
-    font-family: $special-font;
-} 
+// * font ayarları
+h1,h2,h3,h4,h5,h6,a{font-family: $title-font;}
+p{font-family: $text-font;}
+
+// * başlık  
+h1{font-size: 50px;} 
+h2{font-size: 45px;} 
+h3{font-size: 40px;} 
+h4{font-size: 35px;} 
+h5{font-size: 30px;} 
+h6{font-size: 25px;}
+a {font-size: 20px;}
