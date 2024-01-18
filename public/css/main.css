@@ -61,34 +61,117 @@ body {
 
 .spe_title {
   font-size: 50px;
-  font-family: "Aldrich", sans-serif; }
+  font-family: "Aldrich", sans-serif;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #7FFF00;
+  width: fit-content; }
 
 h1, h2, h3, h4, h5, h6, a {
-  font-family: "Inter Tight", sans-serif; }
+  font-family: "Inter Tight", sans-serif;
+  text-transform: capitalize; }
 
 p {
   font-family: "Montserrat", sans-serif; }
 
+.spe_title {
+  font-size: 60px; }
+
 h1 {
-  font-size: 50px; }
+  font-size: 60px; }
 
 h2 {
-  font-size: 45px; }
+  font-size: 55px; }
 
 h3 {
-  font-size: 40px; }
+  font-size: 50px; }
 
 h4 {
-  font-size: 35px; }
+  font-size: 45px; }
 
 h5 {
-  font-size: 30px; }
+  font-size: 40px; }
 
 h6 {
+  font-size: 35px; }
+
+a {
+  font-size: 30px; }
+
+p {
   font-size: 25px; }
 
 a {
-  font-size: 20px; }
+  color: #C5C5C5;
+  transition: 500ms ease-in-out all;
+  text-decoration: none;
+  width: fit-content;
+  position: relative; }
+
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 4px;
+  background-color: #90F508;
+  bottom: -1px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out; }
+
+a:hover {
+  color: #90F508; }
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1); }
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue; }
+  .spe_title {
+    font-size: 50px; }
+  h1 {
+    font-size: 45px; }
+  h2 {
+    font-size: 45px; }
+  h3 {
+    font-size: 40px; }
+  h4 {
+    font-size: 35px; }
+  h5 {
+    font-size: 30px; }
+  h6 {
+    font-size: 25px; }
+  a {
+    font-size: 25px; }
+  p {
+    font-size: 20px; } }
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive; }
+  .spe_title {
+    font-size: 45px; }
+  h1 {
+    font-size: 47px; }
+  h2 {
+    font-size: 42px; }
+  h3 {
+    font-size: 37px; }
+  h4 {
+    font-size: 32px; }
+  h5 {
+    font-size: 27px; }
+  h6 {
+    font-size: 20px; }
+  a {
+    font-size: 20px; }
+  p {
+    font-size: 17px; } }
 
 @keyframes shadow_breath {
   0% {
