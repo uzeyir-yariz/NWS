@@ -26,10 +26,14 @@
 
   // * button-color
     $btn-color-def: #90F508;
-    $btn-color-hov: #B75EEE;
     $btn-color-act: #9B08F5;
-    $btn-color-err: #FF2E2E;
+    $btn-color-def-hov: rgba(155, 8, 245, 0.30);
     $btn-color-not: #F59B08;
+    $btn-color-not-hov: rgba(245, 155, 8, 0.30);
+    $btn-color-err: #FF2E2E;
+    $btn-color-txt-def: #131313;
+    $btn-color-txt-hov: #E9E9E6;
+    $btn-color-txt-clk: #FFFFFF;
   
   // * special color
     $hr-color: #979797;
