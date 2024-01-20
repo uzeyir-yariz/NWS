@@ -1,10 +1,5 @@
-// load fonts
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 // * font 
-  $special-font: 'Aldrich', sans-serif;
+  $special-font: 'Bungee', sans-serif;
   $title-font: 'Inter Tight', sans-serif;
   $text-font: 'Montserrat', sans-serif;
 
@@ -27,9 +22,9 @@
   // * button-color
     $btn-color-def: #90F508;
     $btn-color-act: #9B08F5;
-    $btn-color-def-hov: rgba(155, 8, 245, 0.30);
+    $btn-color-def-hov: #9b08f54d;
     $btn-color-not: #F59B08;
-    $btn-color-not-hov: rgba(245, 155, 8, 0.30);
+    $btn-color-not-hov: #f59b084d;
     $btn-color-err: #FF2E2E;
     $btn-color-txt-def: #131313;
     $btn-color-txt-hov: #E9E9E6;

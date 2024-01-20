@@ -1,15 +1,31 @@
+// load fonts
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import '_reset.scss';
 @import '_varible.scss';
+
+// color def
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video{color: $paragraph-text-color;}
 
 // body 
 body{background-color: $bg-color-0;}
 
 // özel font 
-.spe_title{font-size: 50px; font-family: $special-font;  color: rgba(255, 255, 255, 0); -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: $special-text-color; width: fit-content; text-transform: none !important;}
+.spe_title{
+  font-size: 50px; 
+  font-family: $special-font;  
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-color: $special-text-color; 
+  width: fit-content; 
+  text-transform: none !important;
+}
 
 // font ayarları
 h1,h2,h3,h4,h5,h6,a{font-family: $title-font; text-transform: capitalize;}
-p{font-family: $text-font;}
+p{font-family: $text-font;} 
 
 // başlık
 .spe_title{font-size: 60px;}
@@ -21,12 +37,30 @@ h5{font-size: 40px;}
 h6{font-size: 35px;}
 a {font-size: 30px;}
 p {font-size: 25px;}
+button, input[type="button"]{font-size: 20px;}
 
 // linkler için geçiş 
-a {color: $link-deactive; transition: 500ms ease-in-out all; text-decoration: none; width: fit-content; position: relative;}
-a::before {content: ''; position: absolute; width: 100%; height: 1px; border-radius: 4px; background-color: $link-active; bottom: -1px; left: 0; transform-origin: right; transform: scaleX(0); transition: transform .3s ease-in-out;}
-a:hover{color: $link-active;}
-a:hover::before {transform-origin: left; transform: scaleX(1);}
+a {
+  color: $link-deactive; 
+  transition: 500ms ease-in-out all; 
+  text-decoration: none; 
+  width: fit-content; 
+  position: relative;
+}
+a::before {
+  content: ''; 
+  position: absolute; 
+  width: 100%; 
+  height: 1px; 
+  border-radius: 4px; 
+  background-color: $link-active; 
+  bottom: -1px; 
+  left: 0; 
+  transform-origin: right; 
+  transform: scaleX(0); 
+  transition: transform .3s ease-in-out;
+} a:hover{color: $link-active;}
+  a:hover::before {transform-origin: left; transform: scaleX(1);}
 
 // * font media query
 @media screen and (max-width: 992px) {
@@ -39,6 +73,7 @@ a:hover::before {transform-origin: left; transform: scaleX(1);}
   h6{font-size: 25px;}
   a {font-size: 25px;}
   p {font-size: 20px;}
+  button, input[type="button"]{font-size: 17px;}
 }
 
 /* ekran küçülürse */
@@ -52,16 +87,50 @@ a:hover::before {transform-origin: left; transform: scaleX(1);}
   h6{font-size: 20px;}
   a {font-size: 25px;}
   p {font-size: 17px;}
+  button, input[type="button"]{font-size: 15px;}
 }
 
 // * hr function 
 hr{color: $hr-color;width: 90%;align-items: center;border-radius: 35px;opacity: 50%;}
 
-// * btn ok 
-.def-btn{color: $btn-color-txt-def;background-color: $btn-color-def;border-radius: 5px; outline: none; border: none;padding: 0.4rem;font-weight: 700;font-family: $title-font;letter-spacing: 1px;cursor: pointer;transition: 250ms ease-in-out;}
-.def-btn:hover{background-color: $btn-color-hov;box-shadow: 8px 5px $btn-color-act;color: $btn-color-txt-hov;}
-.def-btn:active {background-color: $btn-color-act;box-shadow: 0 0 $btn-color-act; color: $btn-color-txt-clk;}
+.def-btn, .def-not{
+  color: $btn-color-txt-def;
+  background-color: $btn-color-def;
+  border-radius: 5px;
+  outline: none; 
+  border: none;
+  padding: 0.4rem;
+  font-weight: 700;
+  font-family: $title-font;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
 
-// * btn no
-.def-not{ color: $btn-color-txt-def; background-color: $btn-color-def; border-radius: 5px; outline: none; border: none; padding: 0.4rem; font-weight: 700; font-family: $title-font; letter-spacing: 1px; cursor: pointer; transition: 250ms ease-in-out;}
-.def-not:hover{background-color: $btn-color-not;box-shadow: 8px 5px $btn-color-not-hov;color: $btn-color-txt-hov;}
+// * btn ok 
+.def-btn:hover{
+  background-color: $btn-color-act;       // arka plan  
+  box-shadow: 8px 5px $btn-color-def-hov; // gölge
+  color: $btn-color-txt-hov;              // yazı
+}
+
+.def-btn:active {
+  background-color: $btn-color-act;     // arka plan
+  box-shadow: 0 0 $btn-color-act;       // gölge
+  color: $btn-color-txt-clk;            // yazı
+}
+
+// * btn not
+.def-not:hover{
+  background-color: $btn-color-not;         // arka plan 
+  box-shadow: 8px 5px $btn-color-not-hov;   // gölge
+  color: $btn-color-txt-hov;                // yazı
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.def-not:active {
+  background-color: $btn-color-err;     // arka plan
+  box-shadow: 0 0 $btn-color-act;       // gölge
+  color: $btn-color-txt-clk;            // yazı
+}

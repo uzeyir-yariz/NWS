@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* 
@@ -7,12 +7,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,9 +23,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
-  color: #E9E9E6; }
+  font-size: 100%; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -56,12 +48,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  color: #E9E9E6; }
+
 body {
   background-color: #131313; }
 
 .spe_title {
   font-size: 50px;
-  font-family: "Aldrich", sans-serif;
+  font-family: "Bungee", sans-serif;
   color: rgba(255, 255, 255, 0);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #7FFF00;
@@ -101,6 +96,9 @@ a {
 
 p {
   font-size: 25px; }
+
+button, input[type="button"] {
+  font-size: 20px; }
 
 a {
   color: #C5C5C5;
@@ -147,7 +145,9 @@ a:hover::before {
   a {
     font-size: 25px; }
   p {
-    font-size: 20px; } }
+    font-size: 20px; }
+  button, input[type="button"] {
+    font-size: 17px; } }
 
 /* ekran küçülürse */
 @media screen and (max-width: 600px) {
@@ -168,7 +168,9 @@ a:hover::before {
   a {
     font-size: 25px; }
   p {
-    font-size: 17px; } }
+    font-size: 17px; }
+  button, input[type="button"] {
+    font-size: 15px; } }
 
 hr {
   color: #979797;
@@ -177,7 +179,7 @@ hr {
   border-radius: 35px;
   opacity: 50%; }
 
-.def-btn {
+.def-btn, .def-not {
   color: #131313;
   background-color: #90F508;
   border-radius: 5px;
@@ -191,8 +193,8 @@ hr {
   transition: 250ms ease-in-out; }
 
 .def-btn:hover {
-  background-color: rgba(155, 8, 245, 0.3);
-  box-shadow: 8px 5px #9B08F5;
+  background-color: #9B08F5;
+  box-shadow: 8px 5px #9b08f54d;
   color: #E9E9E6; }
 
 .def-btn:active {
@@ -200,23 +202,17 @@ hr {
   box-shadow: 0 0 #9B08F5;
   color: #FFFFFF; }
 
-.def-not {
-  color: #131313;
-  background-color: #90F508;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  padding: 0.4rem;
-  font-weight: 700;
-  font-family: "Inter Tight", sans-serif;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: 250ms ease-in-out; }
-
 .def-not:hover {
   background-color: #F59B08;
-  box-shadow: 8px 5px #9B08F5;
-  color: #E9E9E6; }
+  box-shadow: 8px 5px #f59b084d;
+  color: #E9E9E6;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px; }
+
+.def-not:active {
+  background-color: #FF2E2E;
+  box-shadow: 0 0 #9B08F5;
+  color: #FFFFFF; }
 
 @keyframes shadow_breath {
   0% {
