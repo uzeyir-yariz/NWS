@@ -59,7 +59,7 @@ a::before {
   transform-origin: right; 
   transform: scaleX(0); 
   transition: transform .3s ease-in-out;
-} a:hover{color: $link-active;}
+} a:hover{color: $link-active; i{transition: all .3s ease-in-out; color: $link-active;}}
   a:hover::before {transform-origin: left; transform: scaleX(1);}
 
 // * font media query

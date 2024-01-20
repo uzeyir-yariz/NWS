@@ -122,6 +122,9 @@ a::before {
 
 a:hover {
   color: #90F508; }
+  a:hover i {
+    transition: all .3s ease-in-out;
+    color: #90F508; }
 
 a:hover::before {
   transform-origin: left;
