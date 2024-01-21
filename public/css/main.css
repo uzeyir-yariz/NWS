@@ -100,6 +100,13 @@ p {
 button, input[type="button"] {
   font-size: 20px; }
 
+.page_logo {
+  width: 90px;
+  height: 90px; }
+
+.page_link {
+  font-size: 30px; }
+
 a {
   color: #C5C5C5;
   transition: 500ms ease-in-out all;
@@ -146,11 +153,16 @@ a:hover::before {
   h6 {
     font-size: 25px; }
   a {
-    font-size: 25px; }
+    font-size: 27px; }
   p {
     font-size: 20px; }
   button, input[type="button"] {
-    font-size: 17px; } }
+    font-size: 17px; }
+  .page_logo {
+    width: 70px;
+    height: 70px; }
+  .page_link {
+    font-size: 27px; } }
 
 /* ekran küçülürse */
 @media screen and (max-width: 600px) {
@@ -169,11 +181,16 @@ a:hover::before {
   h6 {
     font-size: 20px; }
   a {
-    font-size: 25px; }
+    font-size: 27px; }
   p {
     font-size: 17px; }
   button, input[type="button"] {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .page_logo {
+    width: 50px;
+    height: 50px; }
+  .page_link {
+    font-size: 25px; } }
 
 hr {
   color: #979797;
@@ -216,6 +233,21 @@ hr {
   background-color: #FF2E2E;
   box-shadow: 0 0 #9B08F5;
   color: #FFFFFF; }
+
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center; }
+  nav ul {
+    display: flex;
+    gap: 32px;
+    padding: 1rem; }
+  nav img {
+    height: 70px;
+    width: 70px;
+    padding: 0.5rem; }
 
 @keyframes shadow_breath {
   0% {

@@ -1,2 +1,21 @@
 @import '_varible.scss';
 
+nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    ul{
+        display: flex;
+        gap: 32px;
+        padding: 1rem;
+    }
+
+    img{
+        height: 70px;
+        width:  70px;
+        padding: 0.5rem;
+    }
+}
