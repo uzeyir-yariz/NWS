@@ -1,13 +1,20 @@
 @import '../_varible.scss';
 @import '../animation/anime.scss';
 
-.kity{
-    display: flex;
+main{
+    width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
-    gap: 50px;
-    svg{margin-bottom: 2rem; animation: shadow_breath 3s ease infinite;} 
-    h1{animation: rotate_left_right 3s ease infinite;}
+    display: flex;
+
+    .kity{
+        animation: shadow_breath 3s infinite ease-in-out;
+    }
+    .spe_title{
+        margin-top: 50px;
+        animation: rotate_left_right 3s infinite;
+    }
 }

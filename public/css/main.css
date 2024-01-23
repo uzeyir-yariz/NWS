@@ -194,10 +194,9 @@ a:hover::before {
 
 hr {
   color: #979797;
-  width: 90%;
   align-items: center;
   border-radius: 35px;
-  opacity: 50%; }
+  opacity: 75%; }
 
 .def-btn, .def-not {
   color: #131313;
@@ -270,15 +269,16 @@ nav {
   100% {
     transform: rotate(0deg); } }
 
-.kity {
-  display: flex;
+main {
+  width: 100vw;
   height: 100vh;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-direction: column;
-  gap: 50px; }
-  .kity svg {
-    margin-bottom: 2rem;
-    animation: shadow_breath 3s ease infinite; }
-  .kity h1 {
-    animation: rotate_left_right 3s ease infinite; }
+  display: flex; }
+  main .kity {
+    animation: shadow_breath 3s infinite ease-in-out; }
+  main .spe_title {
+    margin-top: 50px;
+    animation: rotate_left_right 3s infinite; }
