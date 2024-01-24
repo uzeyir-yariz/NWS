@@ -1,2 +1,24 @@
 @import '_varible.scss';
 
+.fot{
+
+    margin: 1rem;
+
+
+    .fot-col-0{
+        display: flex;
+        justify-content: end;
+        gap: 32px;
+        padding: 0.2rem;
+        flex-wrap: wrap;
+    }
+    .fot-col-1{
+
+        .footer-copyright{
+            font-size: 100% !important;
+
+            p{}
+            a{}
+        }
+    }
+}

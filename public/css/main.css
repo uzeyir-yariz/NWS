@@ -64,8 +64,7 @@ body {
   text-transform: none !important; }
 
 h1, h2, h3, h4, h5, h6, a {
-  font-family: "Inter Tight", sans-serif;
-  text-transform: capitalize; }
+  font-family: "Inter Tight", sans-serif; }
 
 p {
   font-family: "Montserrat", sans-serif; }
@@ -92,7 +91,7 @@ h6 {
   font-size: 35px; }
 
 a {
-  font-size: 30px; }
+  font-size: 25px; }
 
 p {
   font-size: 25px; }
@@ -153,7 +152,7 @@ a:hover::before {
   h6 {
     font-size: 25px; }
   a {
-    font-size: 27px; }
+    font-size: 20px; }
   p {
     font-size: 20px; }
   button, input[type="button"] {
@@ -181,7 +180,7 @@ a:hover::before {
   h6 {
     font-size: 20px; }
   a {
-    font-size: 27px; }
+    font-size: 17px; }
   p {
     font-size: 17px; }
   button, input[type="button"] {
@@ -269,7 +268,7 @@ nav {
   100% {
     transform: rotate(0deg); } }
 
-main {
+.index_main {
   width: 100vw;
   height: 100vh;
   justify-content: center;
@@ -277,8 +276,19 @@ main {
   text-align: center;
   flex-direction: column;
   display: flex; }
-  main .kity {
+  .index_main .kity {
     animation: shadow_breath 3s infinite ease-in-out; }
-  main .spe_title {
+  .index_main .spe_title {
     margin-top: 50px;
     animation: rotate_left_right 3s infinite; }
+
+.fot {
+  margin: 1rem; }
+  .fot .fot-col-0 {
+    display: flex;
+    justify-content: end;
+    gap: 32px;
+    padding: 0.2rem;
+    flex-wrap: wrap; }
+  .fot .fot-col-1 .footer-copyright {
+    font-size: 100% !important; }
