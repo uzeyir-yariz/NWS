@@ -109,9 +109,9 @@ button, input[type="button"] {
 a {
   color: #C5C5C5;
   transition: 500ms ease-in-out all;
-  text-decoration: none;
   width: fit-content;
-  position: relative; }
+  position: relative;
+  text-decoration: none; }
 
 a::before {
   content: '';
@@ -161,7 +161,7 @@ a:hover::before {
     width: 70px;
     height: 70px; }
   .page_link {
-    font-size: 27px; } }
+    font-size: 20px; } }
 
 /* ekran küçülürse */
 @media screen and (max-width: 600px) {
@@ -278,7 +278,7 @@ nav {
   display: flex; }
   .index_main .kity {
     animation: shadow_breath 3s infinite ease-in-out; }
-  .index_main .spe_title {
+  .index_main .kity > .spe_title {
     margin-top: 50px;
     animation: rotate_left_right 3s infinite; }
 
@@ -290,5 +290,13 @@ nav {
     gap: 32px;
     padding: 0.2rem;
     flex-wrap: wrap; }
-  .fot .fot-col-1 .footer-copyright {
-    font-size: 100% !important; }
+  .fot .fot-col-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center; }
+    .fot .fot-col-1 .footer-social_link {
+      display: flex;
+      gap: 16px; }

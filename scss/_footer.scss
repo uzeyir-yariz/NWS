@@ -13,12 +13,20 @@
         flex-wrap: wrap;
     }
     .fot-col-1{
-
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
         .footer-copyright{
-            font-size: 100% !important;
+            // p{}
+            // a{}
+        }
 
-            p{}
-            a{}
+        .footer-social_link{
+            display: flex;
+            gap: 16px;
         }
     }
 }
