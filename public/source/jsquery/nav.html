@@ -1,7 +1,57 @@
-<img class="page_logo" src="https://picsum.photos/200/300" alt="ana resim">
+<script>
+    // * overlay ayarları
+    const overlay = document.querySelector('.overlay');
+    const navbar = document.querySelector('.navbar');
+    const arrow = document.getElementById("up-arrow");
 
-<ul>
-    <li><a class="page_link" href="#">demoman</a></li>
-    <li><a class="page_link" href="#">demoman</a></li>
-    <li><a class="page_link" href="#">demoman</a></li>
-</ul>
+    function close_nav(){
+        overlay.style.width = "0%"
+    } function open_nav(){
+        overlay.style.width = "100%"
+    }
+
+    // * scroled ayarları
+    function scroll_navbar(){
+        const scrollY = window.scrollY;
+        const shouldApplyStyles = scrollY > 0;
+
+        navbar.style.backgroundColor = shouldApplyStyles ? '#272727be' : 'transparent';
+        arrow.style.opacity = shouldApplyStyles ? '0.7' : '0';
+
+    } window.addEventListener('scroll', scroll_navbar);
+
+    document.getElementById("up-arrow").addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+<span class="up-arrow" id="up-arrow"><i class="fa-solid fa-chevron-up"></i></span>
+<img onclick="location.href='/index.html'" src="https://raw.githubusercontent.com/uzeyir-yariz/NWS/main/images/white_logo.png" alt="page_logo" class="page_logo">
+<div class="overlay">
+    <ul class="overlay-content">
+        <li><a href="/index.html"                        data-page="Ana Sayfa" class=" nav_link active_link">ana sayfa</a></li>
+        <li><a href="#" class="sign_link">giriş</a></li>
+    </ul>
+    <span class="overlay-close-btn" onclick="close_nav()"><i class="fas fa-times"></i></span>
+</div>
+<span onclick="open_nav()" class="overlay-open-btn"><i class="fas fa-bars"></i></span>
+<script>
+    // * dinamik nav linkleri
+    const nav_links = document.querySelectorAll(".nav_link");
+    let currentPageTitle = document.title;
+
+    for(var i = 0; i < nav_links.length; i++){
+        const nav_link = nav_links[i]; // değişken adını düzelttik
+        const targetPage = nav_link.getAttribute("data-page");
+
+        if (currentPageTitle === targetPage) {
+            nav_link.classList.add("active_link");
+            nav_link.classList.remove("deactive_link");
+        } else {
+            nav_link.classList.remove("active_link");
+            nav_link.classList.add("deactive_link");
+        }
+    }
+</script>

@@ -1,21 +1,124 @@
 @import '_varible.scss';
 
-nav{
+.nav{
     display: flex;
-    position: fixed;
+    justify-content: space-around;
+    padding: 1.5rem;
     width: 100%;
-    justify-content: space-between;
+    position: fixed;
+    transition: background-color 500ms ease-in-out;
     align-items: center;
+    margin-top: 50px;
+    top: -50px;
 
-    ul{
+    z-index: 1;
+    
+    .overlay{
         display: flex;
-        gap: 32px;
-        padding: 1rem;
-    }
-
-    img{
-        height: 70px;
-        width:  70px;
-        padding: 0.5rem;
+        .overlay-content{
+            display: flex;
+            gap: 32px;
+        }
     }
 }
+
+// * media query 
+@media (max-width: 800px) {
+    .nav{
+        top: -50px;
+        width: 100%;
+    }
+
+    .overlay{
+        white-space: nowrap;
+        position: fixed;
+        height: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+
+        background-color: rgb(133, 129, 129);
+        background-color: rgba(0,0,0, 0.9);
+
+        .overlay-close-btn{
+            position: absolute;
+            top: 40px;
+            right: 45px;
+        }
+
+        .overlay-content{
+            position: relative;
+            top: -25%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+
+            ul{
+                display: grid;
+                li{a{
+                    padding: 8px;
+                    text-decoration: none;
+                    font-size: 36px;
+                    color: #818181;
+                    display: block;
+                    transition: 0.3s;
+
+                    &:hover, &:focus{
+                        color: #f1f1f1;
+                    }
+                }}
+            }
+        }
+
+    }
+
+    // * nesnleri görünür hale getiriyor
+    .overlay-close-btn {display: block !important;}
+    .overlay-open-btn {display: block !important;}
+}
+
+// nesnleri görünmez hale getiriyor
+.overlay-close-btn{
+    cursor: pointer; 
+    display: none;
+    transition: all 500ms ease-in-out;
+    font-size: 20px;
+
+    &:hover{
+        transform: rotate(-90deg);
+        color: rgba(255, 96, 96, 0.815);
+    }
+}
+
+.overlay-open-btn {
+    cursor: pointer; 
+    display: none;
+    transition: all 500ms ease-in-out;
+    font-size: 20px;
+
+    &:hover{
+        color: red;
+    }
+}
+
+.up-arrow{
+    cursor: pointer;
+    position: fixed;
+    bottom: 25px;
+    right:  25px;
+    background-color: $bg-color-2;
+    padding: 0.7rem;
+    transition: 500ms all ease-in-out;
+    opacity: 0.7;
+    // i{}
+}
+
+.sign_link{color: $special-text-color;}

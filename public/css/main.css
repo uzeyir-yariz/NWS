@@ -232,20 +232,99 @@ hr {
   box-shadow: 0 0 #9B08F5;
   color: #FFFFFF; }
 
-nav {
+.nav {
   display: flex;
-  position: fixed;
+  justify-content: space-around;
+  padding: 1.5rem;
   width: 100%;
-  justify-content: space-between;
-  align-items: center; }
-  nav ul {
-    display: flex;
-    gap: 32px;
-    padding: 1rem; }
-  nav img {
-    height: 70px;
-    width: 70px;
-    padding: 0.5rem; }
+  position: fixed;
+  transition: background-color 500ms ease-in-out;
+  align-items: center;
+  margin-top: 50px;
+  top: -50px;
+  z-index: 1; }
+  .nav .overlay {
+    display: flex; }
+    .nav .overlay .overlay-content {
+      display: flex;
+      gap: 32px; }
+
+@media (max-width: 800px) {
+  .nav {
+    top: -50px;
+    width: 100%; }
+  .overlay {
+    white-space: nowrap;
+    position: fixed;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: #858181;
+    background-color: rgba(0, 0, 0, 0.9); }
+    .overlay .overlay-close-btn {
+      position: absolute;
+      top: 40px;
+      right: 45px; }
+    .overlay .overlay-content {
+      position: relative;
+      top: -25%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column; }
+      .overlay .overlay-content ul {
+        display: grid; }
+        .overlay .overlay-content ul li a {
+          padding: 8px;
+          text-decoration: none;
+          font-size: 36px;
+          color: #818181;
+          display: block;
+          transition: 0.3s; }
+          .overlay .overlay-content ul li a:hover, .overlay .overlay-content ul li a:focus {
+            color: #f1f1f1; }
+  .overlay-close-btn {
+    display: block !important; }
+  .overlay-open-btn {
+    display: block !important; } }
+
+.overlay-close-btn {
+  cursor: pointer;
+  display: none;
+  transition: all 500ms ease-in-out;
+  font-size: 20px; }
+  .overlay-close-btn:hover {
+    transform: rotate(-90deg);
+    color: rgba(255, 96, 96, 0.815); }
+
+.overlay-open-btn {
+  cursor: pointer;
+  display: none;
+  transition: all 500ms ease-in-out;
+  font-size: 20px; }
+  .overlay-open-btn:hover {
+    color: red; }
+
+.up-arrow {
+  cursor: pointer;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #222222;
+  padding: 0.7rem;
+  transition: 500ms all ease-in-out;
+  opacity: 0.7; }
+
+.sign_link {
+  color: #7FFF00; }
 
 @keyframes shadow_breath {
   0% {
