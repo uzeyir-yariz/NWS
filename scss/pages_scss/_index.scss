@@ -9,7 +9,8 @@
     text-align: center;
     flex-direction: column;
     display: flex;
-
+    overflow: hidden;
+    
     .kity{
         animation: shadow_breath 3s infinite ease-in-out;
     }

@@ -5,6 +5,7 @@
 
 @import '_reset.scss';
 @import '_varible.scss';
+@import '_media-query.scss';
 
 // color def
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video{color: $paragraph-text-color;}
@@ -26,20 +27,6 @@ body{background-color: $bg-color-0;}
 // font ayarları
 h1,h2,h3,h4,h5,h6,a{font-family: $title-font;}
 p{font-family: $text-font;} 
-
-// başlık
-.spe_title{font-size: 60px;}
-h1{font-size: 60px;}
-h2{font-size: 55px;}
-h3{font-size: 50px;}
-h4{font-size: 45px;}
-h5{font-size: 40px;}
-h6{font-size: 35px;}
-a {font-size: 25px;}
-p {font-size: 25px;}
-button, input[type="button"]{font-size: 20px;}
-.page_logo{width: 90px; height: 90px;}
-.page_link{font-size: 30px;}
 
 // linkler için geçiş   "1
 a {
@@ -63,38 +50,6 @@ a::before {
   transition: transform .3s ease-in-out;
 } a:hover{color: $link-active; i{transition: all .3s ease-in-out; color: $link-active; }}
   a:hover::before {transform-origin: left; transform: scaleX(1);}
-
-// * font media query
-@media screen and (max-width: 992px) {
-  .spe_title{font-size: 50px;}
-  h1{font-size: 45px;} 
-  h2{font-size: 45px;} 
-  h3{font-size: 40px;} 
-  h4{font-size: 35px;} 
-  h5{font-size: 30px;} 
-  h6{font-size: 25px;} 
-  a {font-size: 20px;} 
-  p {font-size: 20px;} 
-  button, input[type="button"]{font-size: 17px;}
-  .page_logo{width: 70px; height: 70px;}
-  .page_link{font-size: 20px;}
-}
-
-/* ekran küçülürse */
-@media screen and (max-width: 600px) {
-  .spe_title{font-size: 45px;}
-  h1{font-size: 47px;} 
-  h2{font-size: 42px;} 
-  h3{font-size: 37px;} 
-  h4{font-size: 32px;} 
-  h5{font-size: 27px;} 
-  h6{font-size: 20px;}
-  a {font-size: 17px;}
-  p {font-size: 17px;}
-  button, input[type="button"]{font-size: 15px;}
-  .page_logo{width: 50px; height: 50px;}
-  .page_link{font-size: 25px;}
-}
 
 // * hr function 
 hr{color: $hr-color;align-items: center;border-radius: 35px;opacity: 75%;}

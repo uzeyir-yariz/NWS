@@ -1,6 +1,8 @@
 @import '_varible.scss';
 
 .nav{
+    background-color: rgba($bg-color-1, 0.5);
+
     display: flex;
     justify-content: space-around;
     padding: 1.5rem;
@@ -94,7 +96,7 @@
 
     &:hover{
         transform: rotate(-90deg);
-        color: rgba(255, 96, 96, 0.815);
+        color: red;
     }
 }
 
