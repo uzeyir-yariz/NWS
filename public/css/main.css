@@ -266,11 +266,13 @@ hr {
   transition: background-color 500ms ease-in-out;
   align-items: center;
   margin-top: 50px;
+  gap: 50%;
   top: -50px;
   z-index: 1;
   box-shadow: 0 10px 24px rgba(29, 29, 29, 0.5); }
   .nav .overlay {
-    display: flex; }
+    display: flex;
+    flex-direction: row; }
     .nav .overlay .overlay-content {
       display: flex;
       gap: 32px; }
@@ -307,7 +309,8 @@ hr {
       text-align: center;
       flex-direction: column; }
       .overlay .overlay-content ul {
-        display: grid; }
+        display: flex;
+        flex-direction: column; }
         .overlay .overlay-content ul li a {
           padding: 8px;
           text-decoration: none;

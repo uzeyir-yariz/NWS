@@ -2,7 +2,6 @@
 
 .nav{
     background-color: rgba($bg-color-1, 0.7);
-
     display: flex;
     justify-content: space-around;
     padding: 1.5rem;
@@ -11,14 +10,14 @@
     transition: background-color 500ms ease-in-out;
     align-items: center;
     margin-top: 50px;
+    gap: 50%;
     top: -50px;
-
     z-index: 1;
-
     box-shadow: 0 10px 24px rgba($bg-color-1, 0.5);
 
     .overlay{
         display: flex;
+        flex-direction: row;
         .overlay-content{
             display: flex;
             gap: 32px;
@@ -46,7 +45,6 @@
         width: 0;
         overflow-x: hidden;
         transition: 0.5s;
-
         background-color: rgb(133, 129, 129);
         background-color: rgba(0,0,0, 0.9);
 
@@ -66,7 +64,8 @@
             flex-direction: column;
 
             ul{
-                display: grid;
+                display: flex;
+                flex-direction: column;
                 li{a{
                     padding: 8px;
                     text-decoration: none;
