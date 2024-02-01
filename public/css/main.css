@@ -125,7 +125,7 @@ button, input[type="button"] {
 
 @media screen and (max-width: 600px) {
   .spe_title {
-    font-size: 40px !important; }
+    font-size: 35px !important; }
   h1 {
     font-size: 47px; }
   h2 {
@@ -137,11 +137,11 @@ button, input[type="button"] {
   h5 {
     font-size: 27px; }
   h6 {
-    font-size: 20px; }
+    font-size: 25px; }
   a {
-    font-size: 17px; }
+    font-size: 20px; }
   p {
-    font-size: 17px; }
+    font-size: 20px; }
   button, input[type="button"] {
     font-size: 15px; }
   .page_logo {
@@ -393,7 +393,9 @@ hr {
     text-align: center; }
     .fot .fot-col-1 .footer-social_link {
       display: flex;
-      gap: 16px; }
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap; }
 
 @media screen and (max-width: 700px) {
   .fot .fot-col-0 {
