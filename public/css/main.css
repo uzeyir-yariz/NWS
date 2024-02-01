@@ -154,7 +154,9 @@ button, input[type="button"] {
     width: 50px;
     height: 50px; }
   .page_link {
-    font-size: 40px; }
+    font-size: 30px; }
+  .social_link {
+    font-size: 35px; }
   .kity_kity {
     height: 150px;
     width: fit-content; } }
@@ -405,7 +407,6 @@ hr {
 
 @media screen and (max-width: 700px) {
   .fot .fot-col-0 {
-    display: grid;
     justify-content: center; }
   .fot .fot-col-1 {
     justify-content: center;
