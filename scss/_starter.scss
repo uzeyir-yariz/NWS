@@ -32,7 +32,7 @@ p{font-family: $text-font;}
 a {
   color: $link-deactive; 
   transition: 500ms ease-in-out all; 
-  width: fit-content; 
+  width: fit-content;
   position: relative;
   text-decoration: none;
 }
@@ -94,4 +94,18 @@ hr{color: $hr-color;align-items: center;border-radius: 35px;opacity: 75%;}
   background-color: $btn-color-err;     // arka plan
   box-shadow: 0 0 $btn-color-act;       // gölge
   color: $btn-color-txt-clk;            // yazı
+}
+
+// * 
+
+::-webkit-scrollbar {
+  width: $scrolbar-width; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $scrolbar-color-default; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $scrolbar-color-hovered;
 }

@@ -32,3 +32,8 @@
   
   // * special color
     $hr-color: #979797;
+
+  // * scroll color
+    $scrolbar-width: 2px;
+    $scrolbar-color-default: $special-text-color;
+    $scrolbar-color-hovered: rgba($special-text-color, 0.5);
