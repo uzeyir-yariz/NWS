@@ -91,20 +91,23 @@
 .overlay-close-btn{
     cursor: pointer; 
     display: none;
-    transition: all 500ms ease-in-out;
-    font-size: 20px;
-
-    &:hover{
-        transform: rotate(-90deg);
-        color: red;
+    
+    i{
+        transition: all 500ms ease-in-out;
+        &:hover{
+            transform: rotate(-90deg);
+            transition: all 500ms ease-in-out;
+            color: red;
+    
+        }
     }
+    
 }
 
 .overlay-open-btn {
     cursor: pointer; 
     display: none;
     transition: all 500ms ease-in-out;
-    font-size: 20px;
 
     &:hover{
         color: red;

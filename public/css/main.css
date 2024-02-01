@@ -88,9 +88,15 @@ button, input[type="button"] {
   height: 90px; }
 
 .page_link {
-  font-size: 30px; }
+  font-size: 20px; }
 
 .social_link {
+  font-size: 30px; }
+
+.overlay-open-btn {
+  font-size: 30px; }
+
+.overlay-close-btn {
   font-size: 30px; }
 
 @media screen and (max-width: 992px) {
@@ -118,7 +124,7 @@ button, input[type="button"] {
     width: 70px;
     height: 70px; }
   .page_link {
-    font-size: 30px !important; }
+    font-size: 30px; }
   .kity_kity {
     height: 200px;
     width: fit-content; } }
@@ -148,7 +154,7 @@ button, input[type="button"] {
     width: 50px;
     height: 50px; }
   .page_link {
-    font-size: 30px !important; }
+    font-size: 40px; }
   .kity_kity {
     height: 150px;
     width: fit-content; } }
@@ -312,18 +318,18 @@ hr {
 
 .overlay-close-btn {
   cursor: pointer;
-  display: none;
-  transition: all 500ms ease-in-out;
-  font-size: 20px; }
-  .overlay-close-btn:hover {
-    transform: rotate(-90deg);
-    color: red; }
+  display: none; }
+  .overlay-close-btn i {
+    transition: all 500ms ease-in-out; }
+    .overlay-close-btn i:hover {
+      transform: rotate(-90deg);
+      transition: all 500ms ease-in-out;
+      color: red; }
 
 .overlay-open-btn {
   cursor: pointer;
   display: none;
-  transition: all 500ms ease-in-out;
-  font-size: 20px; }
+  transition: all 500ms ease-in-out; }
   .overlay-open-btn:hover {
     color: red; }
 

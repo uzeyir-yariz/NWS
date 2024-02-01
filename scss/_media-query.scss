@@ -16,8 +16,10 @@ a {font-size: 25px;}
 p {font-size: 25px;}
 button, input[type="button"]{font-size: 20px;}
 .page_logo{width: 90px; height: 90px;}
-.page_link{font-size: 30px;}
+.page_link{font-size: 20px;}
 .social_link{font-size: 30px;}
+.overlay-open-btn{font-size: 30px;}
+.overlay-close-btn{font-size: 30px;}
 
 // ! orta seviye
 @media screen and (max-width: 992px) {
@@ -32,7 +34,7 @@ button, input[type="button"]{font-size: 20px;}
     p {font-size: 20px;} 
     button, input[type="button"]{font-size: 17px;}
     .page_logo{width: 70px; height: 70px;}
-    .page_link{font-size: 30px !important;}
+    .page_link{font-size: 30px;}
     .social_link{}
     .kity_kity{height: 200px; width: fit-content;}
 }
@@ -50,7 +52,7 @@ button, input[type="button"]{font-size: 20px;}
     p {font-size: 20px;}
     button, input[type="button"]{font-size: 15px;}
     .page_logo{width: 50px; height: 50px;}
-    .page_link{font-size: 30px !important;}
+    .page_link{font-size: 40px;}
     .social_link{}
     .kity_kity{height: 150px; width: fit-content;}
 }
