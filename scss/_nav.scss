@@ -1,5 +1,8 @@
 @import '_varible.scss';
 
+.active_link{color: red !important;}
+.deactive_link{color: red !important;}
+
 .nav{
     background-color: rgba($bg-color-1, 0.7);
     display: flex;
@@ -10,7 +13,6 @@
     transition: background-color 500ms ease-in-out;
     align-items: center;
     margin-top: 50px;
-    gap: 50%;
     top: -50px;
     z-index: 1;
     box-shadow: 0 10px 24px rgba($bg-color-1, 0.5);
@@ -21,6 +23,7 @@
         .overlay-content{
             display: flex;
             gap: 32px;
+            width: 100%;
         }
     }
 }
@@ -67,9 +70,6 @@
                 display: flex;
                 flex-direction: column;
                 li{a{
-                    padding: 8px;
-                    text-decoration: none;
-                    font-size: 36px;
                     color: #818181;
                     display: block;
                     transition: 0.3s;
@@ -109,6 +109,7 @@
     cursor: pointer; 
     display: none;
     transition: all 500ms ease-in-out;
+    margin-right: 20px;
 
     &:hover{
         color: red;

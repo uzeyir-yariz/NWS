@@ -1,21 +1,2 @@
 @import '../_varible.scss';
 @import '../animation/anime.scss';
-
-.index_main{
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    display: flex;
-    overflow: hidden;
-    
-    .kity{
-        animation: shadow_breath 3s infinite ease-in-out;
-    }
-    .kity > .spe_title{
-        margin-top: 50px;
-        animation: rotate_left_right 3s infinite;
-    }
-}

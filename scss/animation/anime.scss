@@ -22,3 +22,15 @@
         50%  {transform: rotate(-5deg);}
         100% {transform: rotate(0deg);}
     }
+
+// timer için animasyon
+    @keyframes flip-top {
+    	to {
+    		transform: rotateX(90deg);
+    	}
+    }
+    @keyframes flip-bottom {
+    	to {
+    		transform: rotateX(0deg);
+    	}
+    }

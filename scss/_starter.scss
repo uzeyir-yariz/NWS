@@ -54,6 +54,12 @@ a::before {
 // * hr function 
 hr{color: $hr-color;align-items: center;border-radius: 35px;opacity: 75%;}
 
+.page_logo{
+  border-radius: 100%;
+  background: black;
+  cursor: pointer;
+}
+
 .def-btn, .def-not{
   color: $btn-color-txt-def;
   background-color: $btn-color-def;
