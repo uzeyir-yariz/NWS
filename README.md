@@ -7,24 +7,13 @@
 ## use 
 
 - html
-- css (scss converter)
-- scss (scss converter)
+- css
 - JS
-- node.js
 
 ## use technology
 
-- Jquery 
-- npm scss converter
-- JS opject
-- JS animation
-- scss varibles
 - firestore
 - firehosting
-
-## run the css converter
-
-    npm run scss
 
 ## dowland to moduls
 
