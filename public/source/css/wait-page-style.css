@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/Ushio-Noa-wallpaper.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: grayscale(30%);
+}
+
+.wait-page-nav {
+  position: absolute;
+  width: 100%;
+  justify-content: right;
+  display: flex;
+
+  .wait-page-logo {
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 75px;
+    cursor: pointer;
+  }
+}
+
+.wait-page-main {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .wait-page-header,
+  .wait-page-source,
+  .copy-right {
+    letter-spacing: 1px;
+  }
+
+  .wait-page-header {
+    font-weight: 100;
+    letter-spacing: 3px;
+    font-style: italic;
+  }
+
+  .wait-page-source {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    font-weight: 100;
+    opacity: 0.7;
+    font-style: italic;
+  }
+
+  .copy-right {
+    position: absolute;
+    font-weight: 100;
+    font-style: italic;
+    bottom: 50px;
+    a {
+      color: chartreuse;
+      text-decoration: none;
+    }
+  }
+}
+
+/* count down style */
+.count-down .flipdown {
+  margin: auto;
+  width: 600px;
+  margin-top: 30px;
+}
+
+.rotor-group-heading {
+  display: none;
+}
+
+.flipdown.flipdown__theme-dark
+  .rotor-group:nth-child(n + 2):nth-child(-n + 3):before,
+.flipdown.flipdown__theme-dark
+  .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
+  background-color: white;
+}
+
+@media (max-width: 600px) {
+  .wait-page-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .count-down .flipdown {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 30px 0px;
+      place-content: center;
+      width: 75vw;
+      place-items: center;
+      grid-template-areas:
+        "days days days"
+        "hour minute second";
+
+      div:nth-child(1) {
+        grid-area: days;
+      }
+      div:nth-child(2) {
+        grid-area: hour;
+      }
+      div:nth-child(3) {
+        grid-area: minute;
+      }
+      div:nth-child(4) {
+        grid-area: second;
+      }
+    }
+
+    .wait-page-header {
+      font-size: 40px;
+      margin-top: 75px;
+    }
+
+    .copy-right {
+      font-size: 25px;
+    }
+
+    .wait-page-source {
+      font-size: 15px;
+      position: absolute;
+      left: auto;
+    }
+  }
+  .flipdown.flipdown__theme-dark
+    .rotor-group:nth-child(n + 2):nth-child(-n + 3):before,
+  .flipdown.flipdown__theme-dark
+    .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
+    display: none;
+  }
+}
