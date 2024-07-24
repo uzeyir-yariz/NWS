@@ -60,12 +60,3 @@
     Set-ExecutionPolicy Restricted -Scope CurrentUser
 
 its fnish ? close the all door
-
-use do upload/dowlnad firestore ? use the  
-
-    npm install firebase-admin
-
-## admin panel open
-
-    node server.js
-
