@@ -16,6 +16,12 @@ body {
   height: 100vh;
   width: 100vw;
   backdrop-filter: grayscale(30%);
+
+  /* * kopyalama önleyici */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard */
 }
 
 .wait-page-nav {
@@ -67,11 +73,16 @@ body {
     font-weight: 100;
     font-style: italic;
     bottom: 50px;
-    a {
-      color: chartreuse;
-      text-decoration: none;
-    }
   }
+}
+
+.link {
+  color: chartreuse;
+  text-decoration: none;
+}
+.link-white {
+  color: white;
+  text-decoration: none;
 }
 
 /* count down style */
@@ -93,6 +104,13 @@ body {
 }
 
 @media (max-width: 600px) {
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(https://github.com/uzeyir-yariz/uzeyir-yariz/blob/main/Ushio%20Noa.gif?raw=true);
+    background-size: cover;
+    background-position: 30% 0%;
+    background-repeat: no-repeat;
+  }
   .wait-page-main {
     display: flex;
     justify-content: center;
@@ -176,14 +194,17 @@ body {
 }
 
 /* animation */
-.copy-right {
-  a {
-    border-bottom: solid rgba(0, 0, 0, 0) 1px;
-    transition: all ease-in-out 500ms;
-  }
-  a:hover {
-    border-bottom: solid chartreuse 1px;
-  }
+.link,
+.link-white {
+  border-bottom: solid rgba(0, 0, 0, 0) 1px;
+  transition: all ease-in-out 500ms;
+}
+
+.link:hover {
+  border-bottom: solid chartreuse 1px;
+}
+.link-white:hover {
+  border-bottom: solid white 1px;
 }
 
 .wait-page-logo {
