@@ -7,8 +7,8 @@
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(https://github.com/uzeyir-yariz/uzeyir-yariz/blob/main/Ushio%20Noa.gif?raw=true);
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://github.com/uzeyir-yariz/uzeyir-yariz/blob/main/Ushio%20Noa.gif?raw=true); */
+  background: #000;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -59,20 +59,22 @@ body {
     font-style: italic;
   }
 
-  .wait-page-source {
-    position: absolute;
-    bottom: 25px;
-    left: 25px;
-    font-weight: 100;
-    opacity: 0.7;
-    font-style: italic;
-  }
-
   .copy-right {
-    position: absolute;
     font-weight: 100;
+    position: absolute;
     font-style: italic;
-    bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    bottom: 0;
+    padding: 1rem;
+
+    .wait-page-source{
+      font-weight: 100;
+      opacity: 0.7;
+      font-style: italic;
+    }
   }
 }
 
@@ -149,13 +151,11 @@ body {
     }
 
     .copy-right {
-      font-size: 25px;
+      font-size: 20px;
     }
 
     .wait-page-source {
-      font-size: 15px;
-      position: absolute;
-      left: auto;
+      font-size: 20px;
     }
   }
   .flipdown.flipdown__theme-dark
