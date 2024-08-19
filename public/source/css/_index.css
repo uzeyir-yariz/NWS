@@ -1,0 +1,73 @@
+body{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://github.com/uzeyir-yariz/uzeyir-yariz/blob/main/Ushio%20Noa.gif?raw=true);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  backdrop-filter: grayscale(30%);
+  height: 100vh;
+  width: 100vw;
+
+  background-color: #000;
+
+  /* * kopyalama önleyici */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard */
+}
+
+/* mobil responsive */
+@media (max-width: 599px) {
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://github.com/uzeyir-yariz/uzeyir-yariz/blob/main/Ushio%20Noa.gif?raw=true);
+    background-size: cover;
+    background-position: 30% 0%;
+    background-repeat: no-repeat;
+  }
+  footer{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+
+  .count-down-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60% !important;
+    text-wrap: nowrap;
+    padding: 1rem;
+    align-items: center !important;
+
+    .count-down{
+      margin-top: 10px;
+      display: flex;
+      font-size: 40px;
+      gap: 15px;
+  
+      div:nth-child(1){
+        color: chartreuse;
+        margin-right: 10px;
+      }div:nth-child(1)::after{content: "/";}
+    }
+  }
+}
+
+/* timer */
+.count-down-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  padding: 1rem;
+  align-items: end;
+  .count-down{
+    margin-top: 10px;
+    display: flex;
+    font-size: 40px;
+    gap: 15px;
+
+    div:nth-child(1){
+      color: chartreuse;
+      margin-right: 10px;
+    }div:nth-child(1)::after{content: "/";}
+  }
+}

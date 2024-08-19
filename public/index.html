@@ -7,7 +7,8 @@
     <!-- count down -->
     <link href="https://pbutcher.uk/flipdown/css/flipdown/flipdown.css" rel="stylesheet"/>
     <!-- style -->
-    <link rel="stylesheet" href="source/css/wait-page-style.css" />
+    <link rel="stylesheet" href="source/css/_main.css" />
+    <link rel="stylesheet" href="source/css/_index.css">
     <!-- font awsome -->
     <script src="https://kit.fontawesome.com/8edbe00047.js" crossorigin="anonymous"></script>
     <!-- açıklama bölümü -->
@@ -17,29 +18,36 @@
   </head>
   <body>
 
-    <nav class="wait-page-nav">
-      <img
-        class="wait-page-logo"
-        src="source/img/github-logo.png"
-        alt="github-page-enter"/>
+    <!-- nav -->
+    <nav class="d-flex justify-end gap-4 p-2">
+      <a href="#" class="link text-dec-none link-whitesmoke"><i class="fa fa-chart-line"></i></a>
     </nav>
 
-    <main class="wait-page-main">
-      <h1 class="wait-page-header">site yapılandırması</h1>
-      <div class="count-down">
-        <div class="flipdown" id="flipdown"></div>
-      </div>
+    <!-- main -->
+    <main>
 
-      <footer class="copy-right">
-        <a href="https://bluearchive.fandom.com/wiki/Ushio_Noa" class="wait-page-source link-white">source: Ushio Noa</a>
-        <span>
-          <a href="#" class="link-white"><i class="fa-brands fa-square-instagram"></i></a>
-        </span>
-        <span>developed by <a href="https://github.com/uzeyir-yariz" class="link">uzeyir-yariz</a></span>
-      </footer>
+      <div class="count-down-container">
+        <h1 class="text-italic text-weight-100">Site yapılandırması</h1>
+        <div id="count-down" class="count-down text-italic text-weight-100">
+          <div>00</div>
+          <div>00</div>
+          <div>00</div>
+          <div>00</div>
+        </div>
+      </div>
     </main>
 
+    <!-- footer -->
+    <footer class="p-absolute bottom-0 d-flex p-2 w-100 justify-between align-center">
+      <span><a class="text-weight-200 text-italic link text-dec-none link-whitesmoke opacity-3" href="#">source:  ushio noa</a></span>
+      <ul class="list-style-none d-flex gap-4 align-center">
+        <li><a class="link link-whitesmoke text-dec-none" href="https://github.com/uzeyir-yariz" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a></li>
+        <li><a class="link link-whitesmoke text-dec-none" href="https://www.instagram.com/uzeyiryariz/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a class="link link-whitesmoke text-dec-none" href="https://www.linkedin.com/in/%C3%BCzeyir-yariz-aa2722259/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a></li>
+      </ul>
+      <span class="text-weight-200 text-italic">developed by <a class="link text-dec-none link-chartreuse" href="https://uzeyir-yariz.com.tr">uzeyir-yariz</a></span>
+    </footer>
+
   </body>
-  <!-- <script src="https://pbutcher.uk/flipdown/js/flipdown/flipdown.js"></script> -->
-  <!-- <script src="source/js/count-down.js"></script> -->
+  <script src="source/js/count-down.js"></script>
 </html>
