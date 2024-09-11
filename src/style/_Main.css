@@ -1,0 +1,26 @@
+/*  */
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.image-noa{
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://github.com/uzeyir-yariz/uzeyir-yariz/blob/main/Ushio%20Noa.gif?raw=true");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    backdrop-filter: grayscale(30%);
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.content{
+  padding-top: 5rem;
+}
+
+.navbar-brand img{
+  height: 50px;
+  width: auto;
+}
