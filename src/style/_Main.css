@@ -8,19 +8,48 @@ body{
 
 .image-noa{
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://github.com/uzeyir-yariz/uzeyir-yariz/blob/main/Ushio%20Noa.gif?raw=true");
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    backdrop-filter: grayscale(30%);
-    min-height: 100vh;
-    min-width: 100vw;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  backdrop-filter: grayscale(30%);
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.spe_font{
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
 
 .content{
-  padding-top: 5rem;
+  padding-top: 6rem;
+  min-height: 100vh;
 }
 
 .navbar-brand img{
   height: 50px;
   width: auto;
 }
+
+.skill-level {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.table tbody tr{
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.table tbody tr:hover {
+  transform: scale(1.01);
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar{background-color: slateblue;}
+  .image-noa{background-position: 30% 0%;}
+}
+
+.my-5{margin: 5rem 0;}
+.my-6{margin: 6rem 0;}
+.my-7{margin: 7rem 0;}
+.my-8{margin: 8rem 0;}

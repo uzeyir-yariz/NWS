@@ -18,16 +18,16 @@ const Nav = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
 
+            {/* linkler */}
             <li className="nav-item"><NavLink to="/" className="nav-link">Ana sayfa</NavLink></li>
-            <li className="nav-item"><NavLink to="/content" className="nav-link">developer hub</NavLink></li>
+            <li className="nav-item"><NavLink to="/hub" className="nav-link">developer hub</NavLink></li>
+            {/* linkler */}
 
           </ul>
         </div>
-
       </div>
     </nav>
   );
