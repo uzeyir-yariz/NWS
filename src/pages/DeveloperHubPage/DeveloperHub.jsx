@@ -76,10 +76,16 @@ const SecondPage = () => {
 
         <h2 className="title my-4">🚀 İstatislikler 🚀</h2>
         <h3>ziyaretçiler : <img src="https://profile-counter.glitch.me/uzeyir-yariz/count.svg?" /></h3>
-        <div className="d-flex justify-content-around gap-4 alig-items-center my-4 flex-wrap">
-          <img height={175} src="https://github-readme-stats.vercel.app/api?username=uzeyir-yariz&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=codeSTACKr&locale=en&hide_border=false&order=1" alt="stats graph"  />
-          <img height={175} src="https://github-readme-stats.vercel.app/api/top-langs?username=uzeyir-yariz&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=codeSTACKr&hide_border=false&order=2" alt="languages graph"  />
-          <img height={175} src="https://streak-stats.demolab.com?user=uzeyir-yariz&locale=en&mode=daily&theme=codeSTACKr&hide_border=false&border_radius=5&order=3" alt="streak graph"  />
+        <div className="row">
+          <div className="col-12 col-md-4 mb-3">
+            <img className="w-100" src="https://github-readme-stats.vercel.app/api?username=uzeyir-yariz&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=codeSTACKr&locale=en&hide_border=false&order=1" alt="stats graph" />
+          </div>
+          <div className="col-12 col-md-4 mb-3">
+            <img className="w-100" src="https://github-readme-stats.vercel.app/api/top-langs?username=uzeyir-yariz&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=codeSTACKr&hide_border=false&order=2" alt="languages graph" />
+          </div>
+          <div className="col-12 col-md-4 mb-3">
+            <img className="w-100" src="https://streak-stats.demolab.com?user=uzeyir-yariz&locale=en&mode=daily&theme=codeSTACKr&hide_border=false&border_radius=5&order=3" alt="streak graph" />
+          </div>
         </div>
         <div className="d-flex justify-content-center gap-4 alig-items-center my-4">
           <img src="https://github-readme-activity-graph.vercel.app/graph?username=uzeyir-yariz&radius=16&theme=react&area=true&order=5" width="100%" alt="activity-graph graph" />

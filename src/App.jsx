@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
 // uzuvlar
-import Nav from "./components/nav";
+import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
 // pages
