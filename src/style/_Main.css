@@ -8,7 +8,7 @@ body{
 
 .image{
   /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://preview.redd.it/nnvuv0xj2df71.jpg?auto=webp&s=2d73f8659c5bb3cb2284d0977c72f663265596e0"); */
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://i.redd.it/v3fhdu9qndab1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../assets/images/fireWatch.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
