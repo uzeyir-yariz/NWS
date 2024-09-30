@@ -1,11 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
+import image from "./../assets/images/nav-logo.png"
 
 const Nav = () => {
   return (
     <nav className="navbar navbar-expand-lg fixed-top fs-5">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand" href="https://uzeyir-yariz.com.tr">
-          <img src="/src/assets/images/nav-logo.png" alt="navbar_logo" className="img-fluid"/>
+          <img src={image} alt="navbar_logo" className="img-fluid"/>
         </Link>
         <button
           className="navbar-toggler"
