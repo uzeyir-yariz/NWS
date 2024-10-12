@@ -1,8 +1,0 @@
-; BIND dosyası, DNS kayıtlarını bir alandan diğerine
-; aktarmak için kullanılan bir .TXT dosyasıdır. BIND
-; dosyaları, birçok alan kayıt operatörü
-; tarafından yaygın şekilde kullanılmaktadır. Bu nedenle,
-; kaynak kayıtlarını farklı bir kayıt operatör
-; tarafından yönetilen bir alana aktarmak için doğru tercihtir.
-
-_acme-challenge.xn--zeyiryarz-p9a50d.dev.xn--zeyiryarz-p9a50d.dev. 3600 IN TXT "dTv8cS63hNkamLJ3iU2F0sUCAMi5DOUSHg0nMQzVquA"
