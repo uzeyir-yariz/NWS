@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import SecondPage from "./pages/DeveloperHubPage/DeveloperHub";
 import Err404 from "./pages/Err404";
+import GamePage from "./pages/GamePage/GamePage";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/hub" element={<SecondPage/>}/>
+        <Route path="/game" element={<GamePage/> }/>
         <Route path="*" element={<Err404/> }/>
       </Routes>
 

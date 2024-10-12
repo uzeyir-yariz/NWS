@@ -25,6 +25,7 @@ const Nav = () => {
             {/* linkler */}
             <li className="nav-item"><NavLink to="/" className="nav-link">Ana sayfa</NavLink></li>
             <li className="nav-item"><NavLink to="/hub" className="nav-link">developer hub</NavLink></li>
+            <li className="nav-item"><NavLink to="/game" className="nav-link">Game</NavLink></li>
             {/* linkler */}
 
           </ul>
