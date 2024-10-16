@@ -61,3 +61,26 @@ body{
   align-items: center;
 }
 
+.alert-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.alert-content.open {
+  max-height: 500px; /* İçeriğin yüksekliğine bağlı olarak bu değeri artırabilirsin */
+  opacity: 1;
+}
+
+.alert-content.closed {
+  max-height: 0;
+  opacity: 0;
+}
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

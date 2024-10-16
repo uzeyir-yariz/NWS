@@ -24,8 +24,11 @@ const Nav = () => {
 
             {/* linkler */}
             <li className="nav-item"><NavLink to="/" className="nav-link">Ana sayfa</NavLink></li>
-            <li className="nav-item"><NavLink to="/hub" className="nav-link">developer hub</NavLink></li>
-            <li className="nav-item"><NavLink to="/game" className="nav-link">Game</NavLink></li>
+            <li className="nav-item"><NavLink to="/about" className="nav-link">Hakkımda</NavLink></li>
+            <li className="nav-item"><NavLink to="/hub" className="nav-link">Developer hub</NavLink></li>
+            <li className="nav-item"><NavLink to="/game" className="nav-link">Oyun</NavLink></li>
+            <li className="nav-item"><NavLink to="/projects" className="nav-link">Projeler</NavLink></li>
+            <li className="nav-item"><NavLink to="/contact" className="nav-link">İletişim</NavLink></li>
             {/* linkler */}
 
           </ul>
