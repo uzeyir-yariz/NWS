@@ -7,7 +7,8 @@ const generateRandomNumber = (min, max) => {
 
 // Dizi karıştırma fonksiyonu
 function shuffle(arr) {
-  for (let i = arr.length - 1; i > 0; i--) { // Buradaki hata düzeltildi
+  for (let i = arr.length - 1; i > 0; i--) {
+    // Buradaki hata düzeltildi
     const j = Math.floor(Math.random() * (i + 1));
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
@@ -19,11 +20,16 @@ const GamePage = () => {
   const [number1, setNumber1] = useState(generateRandomNumber(1, 10));
   const [number2, setNumber2] = useState(generateRandomNumber(1, 10));
   const operation = "*"; // İşlem türü
-  const [prevNumbers, setPrevNumbers] = useState({ prevNumber1: null, prevNumber2: null }); // Önceki sayılar
+  const [prevNumbers, setPrevNumbers] = useState({
+    prevNumber1: null,
+    prevNumber2: null,
+  }); // Önceki sayılar
   const [sum, setSum] = useState(number1 + number2);
   const [choices, setChoices] = useState([]);
   const [progress, setProgress] = useState([]);
   const [isGameOver, setIsGameOver] = useState(false); // Oyun bitiş durumu
+  const [startTime, setStartTime] = useState(null); // Oyun başlangıç zamanı
+  const [totalTime, setTotalTime] = useState(0);
 
   useEffect(() => {
     // Doğru cevabı güncelle
@@ -89,6 +95,20 @@ const GamePage = () => {
     }
   };
 
+  useEffect(() => {
+    if (!startTime) {
+      setStartTime(Date.now());
+    }
+  }, [startTime]);
+
+  useEffect(() => {
+    // Toplam süreyi güncelle
+    if (isGameOver && startTime) {
+      const elapsedTime = Math.floor((Date.now() - startTime) / 1000);
+      setTotalTime(elapsedTime);
+    }
+  }, [isGameOver, startTime]);
+
   const correctAnswers = progress.filter((status) => status === true).length;
   const incorrectAnswers = progress.length - correctAnswers;
 
@@ -99,6 +119,7 @@ const GamePage = () => {
           <h1>Oyun Bitti!</h1>
           <p>Doğru Cevaplar: {correctAnswers}</p>
           <p>Yanlış Cevaplar: {incorrectAnswers}</p>
+          <p>Toplam Süre: {totalTime} saniye</p>
           <button
             className="btn btn-success"
             onClick={() => window.location.reload()}
@@ -108,7 +129,9 @@ const GamePage = () => {
         </div>
       ) : (
         <div className="text-center d-flex flex-column gap-4">
-          <h5 className="display-5 fw-bolder">{`${number1} ${operation === "*" ? "." : operation} ${number2} = ?`}</h5>
+          <h5 className="display-5 fw-bolder">{`${number1} ${
+            operation === "*" ? "." : operation
+          } ${number2} = ?`}</h5>
 
           <div className="btn-group">
             {choices.map((choice, index) => (
