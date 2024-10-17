@@ -18,7 +18,7 @@ const GamePage = () => {
   const quest_number = 20;
   const [number1, setNumber1] = useState(generateRandomNumber(1, 10));
   const [number2, setNumber2] = useState(generateRandomNumber(1, 10));
-  const [operation, setOperation] = useState("*"); // İşlem türü
+  const operation = "*"; // İşlem türü
   const [prevNumbers, setPrevNumbers] = useState({ prevNumber1: null, prevNumber2: null }); // Önceki sayılar
   const [sum, setSum] = useState(number1 + number2);
   const [choices, setChoices] = useState([]);
@@ -80,9 +80,6 @@ const GamePage = () => {
         prevNumbers.prevNumber1,
         prevNumbers.prevNumber2
       );
-
-      // Rastgele işlem belirleme
-      setOperation(Math.random() < 0.5 ? "+" : "*");
 
       setNumber1(newNumber1);
       setNumber2(newNumber2);
