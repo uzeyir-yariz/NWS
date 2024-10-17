@@ -111,7 +111,7 @@ const GamePage = () => {
         </div>
       ) : (
         <div className="text-center d-flex flex-column gap-4">
-          <h5 className="display-5 fw-bolder">{`${number1} ${operation} ${number2} = ?`}</h5>
+          <h5 className="display-5 fw-bolder">{`${number1} ${operation === "*" ? "." : operation} ${number2} = ?`}</h5>
 
           <div className="btn-group">
             {choices.map((choice, index) => (
