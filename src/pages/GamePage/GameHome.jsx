@@ -1,4 +1,4 @@
-const ProjectPage = () => {
+const GameHome = () => {
   return (
     <div className="center">
       <div className="text-center gap-4 d-flex flex-column">
@@ -15,4 +15,4 @@ const ProjectPage = () => {
   );
 };
 
-export default ProjectPage;
+export default GameHome;

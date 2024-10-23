@@ -25,9 +25,18 @@ const Nav = () => {
             {/* linkler */}
             <li className="nav-item"><NavLink to="/" className="nav-link">Ana sayfa</NavLink></li>
             <li className="nav-item"><NavLink to="/about" className="nav-link">Hakkımda</NavLink></li>
-            <li className="nav-item"><NavLink to="/hub" className="nav-link">Developer hub</NavLink></li>
-            <li className="nav-item"><NavLink to="/game" className="nav-link">Oyun</NavLink></li>
-            <li className="nav-item"><NavLink to="/projects" className="nav-link">Projeler</NavLink></li>
+
+            <li className="nav-item d-lg-flex">
+                <button className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">
+                  Ekstralar
+                </button>
+                <ul className="dropdown-menu" style={{left: "initial"}}>
+                  <li className="dropdown-item"><NavLink className="nav-link" to="extra/hub">Developer Hub</NavLink></li>
+                  <li className="dropdown-item"><NavLink className="nav-link" to="extra/games">Oyunlar</NavLink></li>
+                  <li className="dropdown-item"><NavLink className="nav-link" to="extra/projects">Projeler</NavLink></li>
+                </ul>
+            </li>
+
             <li className="nav-item"><NavLink to="/contact" className="nav-link">İletişim</NavLink></li>
             {/* linkler */}
 
