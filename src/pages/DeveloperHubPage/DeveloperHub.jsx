@@ -16,7 +16,7 @@ const DeveloperHub = () => {
   } = UseFetchData("Repos");
 
   const languages = languagesData || [];
-  const Repos = (reposData || []).filter(repo => repo.started === true);
+  const Repos = (reposData || []).filter((repo) => repo.started === true);
 
   return (
     <div className="content">
