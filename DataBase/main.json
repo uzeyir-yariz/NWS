@@ -1,0 +1,126 @@
+{
+  "Repos": [
+    {
+      "img_url": "../resource/images/NWS-görsel.jpg",
+      "img_alt": "NWS görsel",
+      "started": true,
+      "title": "NWS",
+      "desc": "NWS (Next Web Solution) adlı proje web sitelerini bir sonraki aşamaya taşımak için kullanılan bir araç projesidir.",
+      "badge_languages": ["HTML", "React", "CSS", "Bootstrap", "Firebase"],
+      "Links": [
+        {
+          "link_url": "https://github.com/uzeyir-yariz/NWS",
+          "link_name": "GitHub"
+        }
+      ]
+    },
+    {
+      "img_url": "../resource/images/JavaScript-görsel.jpg",
+      "img_alt": "JavaScript Kursu",
+      "started": true,
+      "title": "JavaScript Kursu görsel",
+      "desc": "Bu projede, JavaScript ile çeşitli projeler geliştirilmiştir. Proje, kapsamlı bir kurs takip edilerek adım adım gerçekleştirilmiş ve her bir proje, ilgili dosyalara özenle aktarılmıştır.",
+      "badge_languages": ["JavaScript", "HTML", "CSS", "Bootstrap"],
+      "Links": [
+        {
+          "link_url": "https://github.com/uzeyir-yariz/javascript",
+          "link_name": "GitHub"
+        },
+        {
+          "link_url": "https://www.udemy.com/course/javascript-egitimi/?couponCode=OF83024E",
+          "link_name": "Kurs"
+        },
+        {
+          "link_url": "https://github.com/uzeyir-yariz/javascript/blob/main/belge.pdf",
+          "link_name": "Sertifika"
+        }
+      ]
+    },
+    {
+      "img_url": "../resource/images/react-görsel.jpg",
+      "title": "React Kursu",
+      "started": true,
+      "img_alt": "React kursu görsel",
+      "desc": "React ile geliştirilmiş projelerin adım adım dosyalara eklendiği bu kurs projesi, modern web geliştirme süreçlerini anlamanızı sağlayacak kapsamlı bir çalışma sunar. Her proje, React'in temel ve ileri düzey özelliklerini uygulamalı olarak öğrenmenize yardımcı olur.",
+      "badge_languages": ["React", "Axios", "Node.js", "JSX", "TSX"],
+      "Links": [
+        {
+          "link_url": "https://github.com/uzeyir-yariz/React",
+          "link_name": "GitHub"
+        },
+        {
+          "link_url": "https://www.udemy.com/course/react-egitimi/?couponCode=OF83024E",
+          "link_name": "Kurs"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "img_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      "name": "HTML5",
+      "width": "100",
+      "status": "success"
+    },
+    {
+      "img_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      "name": "CSS3",
+      "width": "100",
+      "status": "success"
+    },
+    {
+      "img_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+      "name": "Bootstrap",
+      "width": "90",
+      "status": "success"
+    },
+    {
+      "img_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      "name": "JavaScript",
+      "width": "80",
+      "status": "success"
+    },
+    {
+      "img_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "name": "React",
+      "width": "70",
+      "status": "warning"
+    },
+    {
+      "img_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      "name": "TypeScript",
+      "width": "60",
+      "status": "warning"
+    },
+    {
+      "img_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      "name": "Node.js",
+      "width": "50",
+      "status": "danger"
+    },
+    {
+      "img_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      "name": "Git",
+      "width": "90",
+      "status": "success"
+    },
+    {
+      "img_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+      "name": "VS Code",
+      "width": "100",
+      "status": "success"
+    },
+    {
+      "img_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+      "name": "Firebase",
+      "width": "50",
+      "status": "danger"
+    },
+    {
+      "img_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+      "name": "Figma",
+      "width": "100",
+      "status": "success"
+    }
+  ]
+}

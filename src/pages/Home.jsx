@@ -1,4 +1,4 @@
-import Footer from "../components/Footer"
+// import Footer from "../components/Footer"
 
 const Home = () => {
   return (
@@ -6,14 +6,20 @@ const Home = () => {
       <header className="image d-flex justify-content-center align-items-center">
         <h1 className="display-1">uzeyir-yariz</h1>
       </header>
-      
-      {/* <main className="bg-black">
-        demo
+
+      {/* <main>
+        <section>
+
+        <div className="card-group">
+          tasarı halinde
+        </div>
+
+        </section>
       </main> */}
 
-      <Footer/>
+      {/* <Footer/> */}
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
