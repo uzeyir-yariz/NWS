@@ -1,34 +1,45 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
 
 const UseFetchData = (category) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState(null);
-  const url = "../../DataBase/main.json";
+  const url = `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_NWS_DATA_URL}`;
 
   useEffect(() => {
     const FetchData = async () => {
       try {
-        const response = await fetch(url);
-        if (!response.ok) {
-          throw new Error("Failed to fetch data");
-        }
-        const data = await response.json();
-
-        const filteredData = data[category];
-
-        if (!filteredData) {
-          throw new Error("geçersiz kategori");
-        }
-
-        setData(filteredData);
+        const localData = localStorage.getItem(category);
         
+        if (localData) {
+          setData(JSON.parse(localData));
+          setLoading(false);
+        } else {
+          const response = await axios.get(url, {
+            headers: {
+              "X-Master-Key": import.meta.env.VITE_NWS_DATA_MASTER_KEY,
+              "X-Access-Key": import.meta.env.VITE_NWS_DATA_ACCESS_KEY
+            }
+          });
+
+          const filteredData = response.data.record[category];
+
+          if (!filteredData) {
+            throw new Error("Geçersiz kategori");
+          }
+
+          // Veriyi state ve localStorage'e kaydet
+          setData(filteredData);
+          localStorage.setItem(category, JSON.stringify(filteredData));
+        }
       } catch (err) {
-        setErr(err.mesage);
+        setErr(err.message);
       } finally {
         setLoading(false);
       }
     };
+
     FetchData();
   }, [url, category]);
 
