@@ -5,7 +5,7 @@ const UseFetchData = (category) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState(null);
-  const url = `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_NWS_DATA_URL}`;
+  const url = `https://api.jsonbin.io/v3/b/${import.meta.env.VERCEL_NWS_DATA_URL}`;
 
   useEffect(() => {
     const FetchData = async () => {
@@ -18,8 +18,8 @@ const UseFetchData = (category) => {
         } else {
           const response = await axios.get(url, {
             headers: {
-              "X-Master-Key": import.meta.env.VITE_NWS_DATA_MASTER_KEY,
-              "X-Access-Key": import.meta.env.VITE_NWS_DATA_ACCESS_KEY
+              "X-Master-Key": import.meta.env.VERCEL_NWS_DATA_MASTER_KEY,
+              "X-Access-Key": import.meta.env.VERCEL_NWS_DATA_ACCESS_KEY
             }
           });
 
