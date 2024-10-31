@@ -5,7 +5,7 @@ const UseFetchData = (category) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState(null);
-  const url = `https://api.jsonbin.io/v3/b/${import.meta.env.VERCEL_NWS_DATA_URL}`;
+  const url = `https://api.jsonbin.io/v3/b/6723c235ad19ca34f8c1be2c`;
 
   useEffect(() => {
     const FetchData = async () => {
