@@ -1,11 +1,16 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { nws_access_key, nws_data_url, nws_master_key } from "../varibles";
+
+
 
 const UseFetchData = (category) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState(null);
-  const url = `https://api.jsonbin.io/v3/b/6723c235ad19ca34f8c1be2c`;
+  const url = `https://api.jsonbin.io/v3/b/${nws_data_url}`;
+
+  console.log(nws_data_url)
 
   useEffect(() => {
     const FetchData = async () => {
@@ -18,8 +23,8 @@ const UseFetchData = (category) => {
         } else {
           const response = await axios.get(url, {
             headers: {
-              "X-Master-Key": import.meta.env.VERCEL_NWS_DATA_MASTER_KEY,
-              "X-Access-Key": import.meta.env.VERCEL_NWS_DATA_ACCESS_KEY
+              "X-Master-Key": nws_master_key,
+              "X-Access-Key": nws_access_key
             }
           });
 
