@@ -10,8 +10,6 @@ const UseFetchData = (category) => {
   const [err, setErr] = useState(null);
   const url = `https://api.jsonbin.io/v3/b/${nws_data_url}`;
 
-  console.log(nws_data_url)
-
   useEffect(() => {
     const FetchData = async () => {
       try {
