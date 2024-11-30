@@ -15,7 +15,7 @@ const AboutPage = () => {
         contents={`Ben, web teknolojilerine tutku duyan bir geliştiriciyim. Web
           geliştirme projelerinde modern araçlar ve teknolojiler kullanarak, hem
           frontend hem de backend alanlarında kullanıcı dostu ve performanslı
-          çözümler üretiyorum.`}
+          çözümler üretmeye çalışıyorum.`}
         buttons={[
           {
             name: "Projelerimi İncele",
@@ -27,14 +27,14 @@ const AboutPage = () => {
           },
         ]}
         isOpen={activeAlert === 0}
-        onClick={() => handleToggle(0)} // Açık/kapalı durumu kontrol eder
+        onClick={() => handleToggle(0)}
       />
 
       <AlertTool
         title="Ben Kimim ?"
         contents={[
           `Lise yıllarında web geliştirme ile tanıştım ve hızla HTML, CSS ve
-          JavaScript gibi temel teknolojiler üzerinde uzmanlaştım. Ardından
+          JavaScript gibi temel teknolojiler üzerinde çalıştım. Ardından
           React ve Firebase gibi modern araçlarla projeler geliştirerek kendimi
           sürekli geliştirdim.`,
           `Bir web geliştirici olarak, hem frontend hem de backend alanlarında
@@ -42,11 +42,11 @@ const AboutPage = () => {
           ölçeklenebilir web uygulamaları geliştirmeyi amaçlıyorum.`,
         ]}
         isOpen={activeAlert === 1}
-        onClick={() => handleToggle(1)} // Açık/kapalı durumu kontrol eder
+        onClick={() => handleToggle(1)}
       />
 
       <AlertTool
-        title="Hangi Alanlarda Uzmanım?"
+        title="Hangi Alanlarda çalıştım?"
         contents={`Web geliştirme dünyasında, hem frontend hem de backend alanında
           yetkinlik kazandım.`}
         list={{
@@ -77,24 +77,23 @@ const AboutPage = () => {
         }}
         subContent={{
           title: "Bu teknolojilerle neler yapıyorum",
-          content:
-            "Web sitelerinin tasarımını oluşturmakla kalmıyor, aynı zamanda performans, güvenlik ve kullanıcı deneyimi odaklı backend altyapılarını da kuruyorum.",
+          content: `Web sitelerinin tasarımını oluşturmakla kalmıyor, aynı zamanda performans, güvenlik ve kullanıcı deneyimi odaklı backend altyapılarını da kuruyorum.`,
         }}
         isOpen={activeAlert === 2}
-        onClick={() => handleToggle(2)} // Açık/kapalı durumu kontrol eder
+        onClick={() => handleToggle(2)}
       />
 
       <AlertTool
         title="Neler Yaptım?"
         contents={
-          "Kariyerimde birçok projede görev aldım ve farklı alanlarda deneyim kazandım."
+          "Bir çok proje geliştirerek kendimi geliştirmeye çalışıyorum bunlardan bazıları:"
         }
         list={{
           ul: [
             {
               str: "E-Ticaret Sitesi",
               content:
-                "Kendi altyapımı oluşturarak bir e-ticaret sitesi geliştirdim. React ve Firebase kullandım ve projeyi sürekli olarak yeni teknolojilerle üretiyorum.",
+                "React, Firebase, Mongo gibi araçları kullanarak bir e-ticaret denemesi yapıyorum.",
             },
             {
               str: "Portföy Web Sitesi",
@@ -104,12 +103,12 @@ const AboutPage = () => {
             {
               str: "Blog Platformu",
               content:
-                "Firebase ve React ile bir içerik yönetim sistemi (CMS) geliştirerek, dinamik içeriklerin rahatça yönetilebileceği bir platform kurmaktayım.",
+                "Astro ve Vue/React kullanarak kendi blog sitemi bir şablon üzerine oturtmaya çalışıyorum.",
             },
           ],
         }}
         isOpen={activeAlert === 3}
-        onClick={() => handleToggle(3)} // Açık/kapalı durumu kontrol eder
+        onClick={() => handleToggle(3)}
       />
 
       <AlertTool
@@ -132,7 +131,7 @@ const AboutPage = () => {
           ],
         }}
         isOpen={activeAlert === 4}
-        onClick={() => handleToggle(4)} // Açık/kapalı durumu kontrol eder
+        onClick={() => handleToggle(4)}
       />
 
       <AlertTool
@@ -149,7 +148,7 @@ const AboutPage = () => {
           ],
         }}
         isOpen={activeAlert === 5}
-        onClick={() => handleToggle(5)} // Açık/kapalı durumu kontrol eder
+        onClick={() => handleToggle(5)}
       />
 
       <AlertTool
@@ -166,7 +165,7 @@ const AboutPage = () => {
           ],
         }}
         isOpen={activeAlert === 6}
-        onClick={() => handleToggle(6)} // Açık/kapalı durumu kontrol eder
+        onClick={() => handleToggle(6)}
       />
 
       <AlertTool
@@ -178,9 +177,8 @@ const AboutPage = () => {
             link: "/contact",
           },
         ]}
-          
         isOpen={activeAlert === 7}
-        onClick={() => handleToggle(7)} // Açık/kapalı durumu kontrol eder
+        onClick={() => handleToggle(7)}
       />
     </div>
   );
