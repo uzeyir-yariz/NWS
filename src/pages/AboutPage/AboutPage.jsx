@@ -142,8 +142,14 @@ const AboutPage = () => {
         list={{
           ul: [
             {
-              str: "(içerik bekleniyor)",
-              content: "(içerik bekleniyor)",
+              str: "Udemy JS kursu",
+              content:
+                "Can Boz tarafından yapılan bir JS Udemy kursunu bitirdim.",
+            },
+            {
+              str: "Udemy React kursu",
+              content:
+                "Can Boz tarafından yapılan bir React Udemy kursunu bitirdim.",
             },
           ],
         }}
@@ -159,8 +165,23 @@ const AboutPage = () => {
         list={{
           ul: [
             {
-              str: "içerik bekleniyor",
-              content: "içerik bekleniyor",
+              str: "W3 Schools",
+              content: "Web alanında verdiği bilgi kaynağı ve örnek projeler, bana ilham veriyor"
+            },
+            {
+              str: "Fireship",
+              content:
+                "ingilizce, kaynaklar, yazılım haberler ve programlama dillerini hızlıca anattığı için kullanıyorum",
+            },
+            {
+              str: "Terry Davis",
+              content:
+                "TempleOS kurucusu ve Holy C'in yapımcısı olan Terry Davis, bana ilham veriyor",
+            },
+            {
+              str: "Brendan Eich",
+              content:
+                "Javascript, Netscape, Mozilla, Mozilla firefox ve Brave kurucusu, Brendan Eich, bana ilham veriyor",
             },
           ],
         }}
