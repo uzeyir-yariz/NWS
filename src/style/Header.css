@@ -1,0 +1,10 @@
+.header{
+    /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://preview.redd.it/nnvuv0xj2df71.jpg?auto=webp&s=2d73f8659c5bb3cb2284d0977c72f663265596e0"); */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+    url("/header-image.jpg");
+    background-size: cover;
+  background-position: top center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  backdrop-filter: grayscale(30%);
+}

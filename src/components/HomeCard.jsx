@@ -1,18 +1,8 @@
-const RepoCard = (Props) => {
+const HomeCard = (Props) => {
   const { Links, badge_languages, desc, img_url, title, img_alt } = Props;
 
-  /*
-    gelecek props:
-      resim src
-      resim alt
-      kart başlık
-      kart yazısı
-      kart badge (arr)
-      kart link (arr)
-  */
-
   return (
-      <div className="card">
+    <div className="card">
         <img src={img_url} className="card-img-top" alt={img_alt} />
 
         <div className="card-header">
@@ -44,4 +34,4 @@ const RepoCard = (Props) => {
   );
 };
 
-export default RepoCard;
+export default HomeCard;

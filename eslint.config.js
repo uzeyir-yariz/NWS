@@ -10,15 +10,12 @@ export default [
     files: ['**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.node,
+      globals: globals.browser,
       parserOptions: {
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
         sourceType: 'module',
       },
-    },
-    env: {
-      node: true, // Buraya ekledik
     },
     settings: { react: { version: '18.3' } },
     plugins: {

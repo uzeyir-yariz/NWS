@@ -1,0 +1,57 @@
+:root {
+  --bg: #111111;
+  --card-size: 20vw;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@layer cards {
+  .uzy-card {
+    cursor: pointer;
+    color: canvas;
+    background: #1c1f2b;
+    width: var(--card-size);
+    aspect-ratio: 3 / 4;
+    position: relative;
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+
+  .uzy-card:hover {
+    background: #2a2d3e;
+  }
+
+  .uzy-card::after,
+  .uzy-card::before {
+    content: "";
+    position: absolute;
+    background-image: conic-gradient(
+      from var(--angle),
+      #002366,
+      #FF0033
+    );
+    inset: 0;
+    margin: -6px;
+    z-index: -1;
+    border-radius: 15px;
+    animation: spin 10s linear infinite;
+  }
+
+  .uzy-card::after {
+    filter: blur(1rem);
+  }
+
+  @keyframes spin {
+    from {
+      --angle: 0deg;
+    }
+    to {
+      --angle: 360deg;
+    }
+  }
+}
