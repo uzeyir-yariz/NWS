@@ -4,7 +4,6 @@ import ListHomeCard from "./components/ListHomeCard";
 import ListProjectCard from "./components/ListProjectCard";
 
 // TODO: deadline kısmının tasarımı daha detaylı olmalıdır
-
 function App() {
   const [time, setTime] = useState("");
   const [date, setDate] = useState("");
