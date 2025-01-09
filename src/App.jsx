@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import ListHomeCard from "./components/ListHomeCard";
 import ListProjectCard from "./components/ListProjectCard";
+import TimeDisplay from "./components/DisplayTime";
 
 // TODO: deadline kısmının tasarımı daha detaylı olmalıdır
 function App() {
@@ -32,57 +33,48 @@ function App() {
           <h1 className="display-1">uzeyir-yariz</h1>
           <div className="display-3 fst-italic">{date}</div>
         </div>
-        <div className=" bottom-0 horizontal-center  display-2 fw-lighter spe-font">
-          {time}
-        </div>
+
+        <TimeDisplay time={time} date={date} />
 
         <nav className="d-flex p-1 justify-content-between">
           <p className="w-50 opacity-75">söz ~ yazan kişi</p>
 
           <ul className="display-6 d-flex gap-4 list-unstyled">
             <li>
-              {" "}
               <a
                 className="text-light"
                 href="https://github.com/yourprofile"
                 target="_blank"
               >
-                {" "}
-                <i className="fa-brands fa-github"></i>{" "}
-              </a>{" "}
+                <i className="fa-brands fa-github"></i>
+              </a>
             </li>
             <li>
-              {" "}
               <a
                 className="text-light"
                 href="https://www.instagram.com/yourprofile"
                 target="_blank"
               >
-                {" "}
-                <i className="fa-brands fa-instagram"></i>{" "}
-              </a>{" "}
+                <i className="fa-brands fa-instagram"></i>
+              </a>
             </li>
             <li>
-              {" "}
               <a
                 className="text-light"
                 href="https://www.youtube.com/yourchannel"
                 target="_blank"
               >
-                {" "}
-                <i className="fa-brands fa-youtube"></i>{" "}
-              </a>{" "}
+                <i className="fa-brands fa-youtube"></i>
+              </a>
             </li>
             <li>
-              {" "}
               <a
                 className="text-light"
                 href="https://www.linkedin.com/in/yourprofile"
                 target="_blank"
               >
-                {" "}
-                <i className="fa-brands fa-linkedin"></i>{" "}
-              </a>{" "}
+                <i className="fa-brands fa-linkedin"></i>
+              </a>
             </li>
           </ul>
         </nav>

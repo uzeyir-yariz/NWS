@@ -10,7 +10,6 @@ const ListHomeCard = () => {
           <HomeCard
             {...project}
             key={index}
-            
           />
         ))}
       </div>

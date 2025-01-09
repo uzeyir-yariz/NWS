@@ -55,3 +55,57 @@ html {
   transform: scaleX(1);
   transform-origin: left;
 }
+
+/* Scrollbar için genel stil */
+::-webkit-scrollbar {
+  width: 2px; /* Scrollbar genişliği */
+  height: 2px; /* Scrollbar genişliği */
+}
+
+/* Scrollbar arka planı */
+::-webkit-scrollbar-track {
+  /* background: #f1f1f1;  */
+  border-radius: 10px;
+}
+
+/* Scrollbar başparmak/kaydırıcı */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+/* Scrollbar başparmak/kaydırıcı hover durumunda */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* Firefox için scrollbar özelleştirme */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+/* --- */
+
+.hover-expand {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  cursor: pointer;
+  text-align: left;
+  font-size: 2rem;
+  overflow: hidden;
+  max-height: 2.5rem; /* Sadece ilk satırı göstermek için */
+  transition: all 0.5s ease-in-out;
+  opacity: 0.3;
+}
+
+.hover-expand:hover {
+  max-height: 14rem; /* Hover olduğunda tüm içeriği göstermek için */
+  opacity: 1;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #ff6347; /* Önemli noktaları vurgulamak için renk */
+}
