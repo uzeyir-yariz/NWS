@@ -1,12 +1,12 @@
 import HomeCard from "./HomeCard";
-import { projects } from "./../data/Project";
+import { starredProjects } from "./../data/Project";
 
 const ListHomeCard = () => {
   return (
     <div className="container">
-      <h2 className="title my-4">⭐ Projeler ⭐</h2>
+      <h2 className="title display-4 my-4 text-center highlight">💻 Projeler 💻</h2>
       <div className="card-group">
-        {projects.map((project, index) => (
+        {starredProjects.map((project, index) => (
           <HomeCard
             {...project}
             key={index}

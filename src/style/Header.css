@@ -8,3 +8,32 @@
   background-repeat: no-repeat;
   backdrop-filter: grayscale(30%);
 }
+
+.source{
+  position: absolute;
+  bottom: 0;
+  margin: 1rem;
+  right: 0;
+}
+
+.deadline{
+  position: absolute;
+  bottom: 0;
+  margin: 1rem;
+  left: 0;
+}
+
+@media screen and (max-width: 500px) {
+  nav{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .time{
+    position: absolute;
+    top: 80%; 
+  }
+}

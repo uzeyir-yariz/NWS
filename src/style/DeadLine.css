@@ -1,0 +1,10 @@
+/* Tüm ekranı kaplayan siyah bir arka plan */
+.deadline-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black; /* Tamamen siyah arka plan */
+  z-index: 1000;
+}

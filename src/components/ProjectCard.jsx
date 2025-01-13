@@ -1,30 +1,40 @@
-const ProjectCard = () => {
+const ProjectCard = (Props) => {
+  const { Links, badge_languages, desc, img_url, title, img_alt, reverse } = Props;
+
   return (
-    <div>
-      <figure>
-        <img src="" alt="kart resmi" />
-      </figure>
+    <div className={`project-card ${reverse ? "reverse" : ""}`}>
+      <img src={img_url} alt={img_alt} />
 
-      <article>
-        <h5>kart başlığı</h5>
-        <p>kart açıklaması</p>
-      </article>
+      <div className="project-content">
+        <div>
+          <h3>{title}</h3>
+          <p>{desc}</p>
+        </div>
 
-      <div>
-        <ul>
-          <li>tags</li>
-          <li>tags</li>
-          <li>tags</li>
-        </ul>
+        <div className="project-tags">
+          {badge_languages.map((language, langIndex) => (
+            <span key={langIndex} className="badge">
+              {language}
+            </span>
+          ))}
+        </div>
 
-        <ul>
-          <li>link</li>
-          <li>demo</li>
-          <li>site</li>
-        </ul>
+        <div className="card-links">
+          {Links.map((link, index) => (
+            <a
+              href={link.link_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={index}
+              className="card-link"
+            >
+              {link.link_name}
+            </a>
+          ))}
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

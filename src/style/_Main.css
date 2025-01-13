@@ -2,8 +2,8 @@ html {
   font-size: 110%;
 }
 
-.spe-font{
-  font-family: 'Courier New', Courier, monospace;
+.spe-font {
+  font-family: "Courier New", Courier, monospace;
 }
 
 .center {
@@ -14,7 +14,7 @@ html {
   transform: translate(-50%, -50%);
 }
 
-.horizontal-center{
+.horizontal-center {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -24,7 +24,7 @@ html {
   right: 0;
 }
 
-.left-0{
+.left-0 {
   left: 0;
 }
 
@@ -34,6 +34,7 @@ html {
   position: relative;
   text-decoration: none;
   transition: 0.5s ease-in-out color;
+  cursor: pointer;
 }
 
 .link::before {
@@ -70,13 +71,13 @@ html {
 
 /* Scrollbar başparmak/kaydırıcı */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
   border-radius: 10px;
 }
 
 /* Scrollbar başparmak/kaydırıcı hover durumunda */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 /* Firefox için scrollbar özelleştirme */
@@ -95,17 +96,29 @@ body {
   text-align: left;
   font-size: 2rem;
   overflow: hidden;
-  max-height: 2.5rem; /* Sadece ilk satırı göstermek için */
+  max-height: 2.5rem;
   transition: all 0.5s ease-in-out;
   opacity: 0.3;
 }
 
 .hover-expand:hover {
-  max-height: 14rem; /* Hover olduğunda tüm içeriği göstermek için */
+  max-height: 14rem;
   opacity: 1;
 }
 
 .highlight {
   font-weight: bold;
-  color: #ff6347; /* Önemli noktaları vurgulamak için renk */
+  color: #ff6347;
+}
+
+@media screen and (max-width: 500px) {
+  .progressbar-time {
+    display: none !important;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .progressbar-time {
+    display: none !important;
+  }
 }
