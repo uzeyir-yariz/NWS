@@ -1,22 +1,18 @@
-import ProjectCard from "./ProjectCard";
-import { projects } from "./../data/Project";
-import { useEffect, useState } from "react";
+```jsx
+import ProjectCard from "./ProjectCard"
+import { projects } from "./../data/Project"
 
-// diziyi karıştırmak için bir tane fonksiyon yazıyorum aşağıya
-const shuffleArr = (arr) => {
-  return arr
+// Diziyi rastgele karıştırmak için bir yardımcı işlev
+const shuffleArray = (array) => {
+  return array
     .map((item) => ({ item, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
     .map(({ item }) => item);
 };
 
 const ListProjectCard = () => {
-  const [shuffledProjects, setShuffledProjects] = useState([]);
-
-  // aşağıda yazdığım kod gelen projeleri karıştırıp karıştırılmış projeleri render ediyor
-  useEffect(() => {
-    setShuffledProjects(shuffleArr(projects));
-  }, []);
+  // Projeleri rastgele sıraya koy
+  const shuffledProjects = shuffleArray(projects);
 
   return (
     <section>
@@ -33,3 +29,5 @@ const ListProjectCard = () => {
 };
 
 export default ListProjectCard;
+
+```
