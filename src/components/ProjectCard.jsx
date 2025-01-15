@@ -1,5 +1,6 @@
 const ProjectCard = (Props) => {
-  const { Links, badge_languages, desc, img_url, title, img_alt, reverse } = Props;
+  const { Links, badge_languages, desc, img_url, title, img_alt, reverse } =
+    Props;
 
   return (
     <div className={`project-card ${reverse ? "reverse" : ""}`}>
@@ -11,26 +12,28 @@ const ProjectCard = (Props) => {
           <p>{desc}</p>
         </div>
 
-        <div className="project-tags">
-          {badge_languages.map((language, langIndex) => (
-            <span key={langIndex} className="badge">
-              {language}
-            </span>
-          ))}
-        </div>
+        <div className="project-card-footer">
+          <div className="project-tags">
+            {badge_languages.map((language, langIndex) => (
+              <span key={langIndex} className="badge bg-primary">
+                {language}
+              </span>
+            ))}
+          </div>
 
-        <div className="card-links">
-          {Links.map((link, index) => (
-            <a
-              href={link.link_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              key={index}
-              className="card-link"
-            >
-              {link.link_name}
-            </a>
-          ))}
+          <div className="card-links">
+            {Links.map((link, index) => (
+              <a
+                href={link.link_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+                className="card-link"
+              >
+                {link.link_name}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </div>

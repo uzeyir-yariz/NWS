@@ -19,15 +19,18 @@ const ListProjectCard = () => {
   }, []);
 
   return (
-    <section>
-      <h2 className="display-4 highlight text-center">Tüm Projelerim</h2>
-      {shuffledProjects.map((project, index) => (
-        <ProjectCard
-          key={index}
-          {...project}
-          reverse={index % 2 === 0} // İlk proje ve sıradaki projelerde ters düzen
-        />
-      ))}
+    <section className="container">
+      <h2 className="display-4 highlight pt-5 text-center">Tüm Projelerim</h2>
+      <hr />
+      <div className="project-card-container">
+        {shuffledProjects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            {...project}
+            reverse={index % 2 === 0} // İlk proje ve sıradaki projelerde ters düzen
+          />
+        ))}
+      </div>
     </section>
   );
 };

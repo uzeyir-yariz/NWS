@@ -1,3 +1,31 @@
+.project-card-container{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.project-card img {
+  width: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.project-card.reverse {
+  flex-direction: row-reverse;
+} 
+
 .project-card {
   display: flex;
   flex-direction: row;
@@ -6,15 +34,7 @@
   border-radius: 8px;
   padding: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: auto;
   width: 100%;
-  max-width: 1000px;
-}
-
-.project-card img {
-  width: 250px;
-  border-radius: 8px;
-  object-fit: cover;
 }
 
 .project-content {
@@ -28,6 +48,8 @@
   font-size: 1.5rem;
   text-transform: capitalize;
   margin: 0;
+  border-bottom: solid white 1px;
+  width: fit-content;
 }
 
 .project-content p {
@@ -35,34 +57,31 @@
   margin: 8px 0;
 }
 
-.project-tags {
+.project-card-footer{
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  justify-content: space-between;
 }
 
-.badge {
-  padding: 4px 8px;
-  background-color: #007bff;
-  color: white;
-  font-size: 0.9rem;
-  border-radius: 4px;
-}
+@media screen and (max-width: 1000px) {
+  .project-card {
+    display: flex;
+    flex-direction: column !important;
+  }
 
-.card-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 8px;
-}
+  .project-content {
+    display: flex;
+    gap: 32px;
+  }
 
+  .project-card img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
 
-
-.card-link:hover {
-  text-decoration: underline;
-}
-
-/* Görselin sağda olduğu düzen */
-.project-card.reverse {
-  flex-direction: row-reverse;
+  .project-card-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 }
