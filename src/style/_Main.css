@@ -1,183 +1,29 @@
 body {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-html{
-  font-size: 110%;
-}
-
-.image {
-  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://preview.redd.it/nnvuv0xj2df71.jpg?auto=webp&s=2d73f8659c5bb3cb2284d0977c72f663265596e0"); */
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
-    url("../assets/images/fireWatch.jpg");
-    background-size: cover;
-  background-position: top center;
   height: 100vh;
-  background-repeat: no-repeat;
-  backdrop-filter: grayscale(30%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  position: relative;
+  background:  url(/public/header-image.jpg) no-repeat center center/cover;
 }
 
-.spe_font {
-  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
-    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
 }
 
 .content {
-  padding-top: 6rem;
-  min-height: 100vh;
+  position: relative;
+  z-index: 2;
 }
-
-.navbar-brand img {
-  height: 50px;
-  width: auto;
-}
-
-.skill-level {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.table tbody tr {
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.table tbody tr:hover {
-  transform: scale(1.01);
-}
-
-@media only screen and (max-width: 600px) {
-  .navbar {
-    background-color: slateblue;
-  }
-  .image-noa {
-    background-position: 30% 0%;
-  }
-}
-
-.my-5 {
-  margin: 5rem 0;
-}
-.my-6 {
-  margin: 6rem 0;
-}
-.my-7 {
-  margin: 7rem 0;
-}
-.my-8 {
-  margin: 8rem 0;
-}
-
-.center {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
-}
-
-.alert-content {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.4s ease;
-}
-
-.alert-content.open {
-  max-height: 500px; /* İçeriğin yüksekliğine bağlı olarak bu değeri artırabilirsin */
-  opacity: 1;
-}
-
-.alert-content.closed {
-  max-height: 0;
-  opacity: 0;
-}
-
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-.card {
-  transition: all 0.5s ease; /* Yumuşak geçiş efekti */
-  cursor: pointer;
-}
-
-.card:hover {
-  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3); /* Gölge efekti */
-}
-
-.gradient{background: linear-gradient(180deg, rgba(0,0,5,1) 50%, rgba(33,36,40,1));}
-
-/* * footer */
-.footer {
-  padding: 40px 0;
-  background-color: #0d1117;
-  color: white;
-}
-
-.footer ul {
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 0;
-}
-
-.footer li {
-  display: inline-block; /* Change to inline-block for horizontal layout */
-  padding: 0 10px;
-}
-
-.footer ul a {
-  color: inherit;
-  text-decoration: none;
-  opacity: 0.8;
-}
-
-.footer ul a:hover {
-  opacity: 1;
-}
-
-.footer .social {
-  text-align: center;
-  padding-bottom: 25px;
-}
-
-.footer .social > a {
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-  margin: 0 8px;
-  color: inherit;
-  opacity: 0.75;
-}
-
-.footer .social > a:hover {
-  opacity: 0.9;
-}
-
-.footer .copyright {
-  margin-top: 15px;
-  text-align: center;
-  font-size: 13px;
-  color: #aaa;
-  margin-bottom: 0;
-}
-.footer .footer-break{
-height:2px;
-border-width:0;
-color:gray;
-background-color:white
-  }
