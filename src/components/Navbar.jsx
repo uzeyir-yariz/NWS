@@ -17,7 +17,7 @@ function Navbar({ randomQuote }) {
         <li>
           <a
             className="text-light"
-            href="https://github.com/yourprofile"
+            href="https://github.com/uzeyir-yariz"
             target="_blank"
             rel="noreferrer"
           >
@@ -27,7 +27,7 @@ function Navbar({ randomQuote }) {
         <li>
           <a
             className="text-light"
-            href="https://www.instagram.com/yourprofile"
+            href="https://www.instagram.com/uzeyiryariz/"
             target="_blank"
             rel="noreferrer"
           >
@@ -37,7 +37,7 @@ function Navbar({ randomQuote }) {
         <li>
           <a
             className="text-light"
-            href="https://www.youtube.com/yourchannel"
+            href="https://www.youtube.com/@uzeyiryariz3169"
             target="_blank"
             rel="noreferrer"
           >
@@ -47,7 +47,7 @@ function Navbar({ randomQuote }) {
         <li>
           <a
             className="text-light"
-            href="https://www.linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/%C3%BCzeyir-yariz-aa2722259/"
             target="_blank"
             rel="noreferrer"
           >
