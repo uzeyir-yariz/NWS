@@ -1,0 +1,38 @@
+---
+import Sidebar from '@components/neovim/Sidebar.astro';
+import StatusBar from '@components/neovim/StatusBar.astro';
+import '@/globals.css';
+import KeyBindings from "@components/neovim/KeyBindings.astro";
+import { Icon } from 'astro-icon/components';
+
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="overflow-hidden">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/svg+xml" href="/neovim.png" />
+	<meta name="generator" content={Astro.generator} />
+	<title>{title}</title>
+</head>
+<body class="bg-nvim-bg text-nvim-fg font-mono flex flex-col h-full select-none prose-invert">
+	<div class="flex flex-1 overflow-hidden">
+		<Sidebar />
+		<main class="flex-1 overflow-y-auto p-2">
+			<Icon id="cursor" name='mdi:minus' width={24} height={24} class={`animate-pulse absolute z-50 text-lg top-[-100vh] rotate-90`}></Icon>
+			<slot />
+		</main>
+	</div>
+	<KeyBindings />
+	<StatusBar />
+	</body>
+</html>
+
+<script src="../scripts/navigation.ts"></script>
+<script src="../scripts/search.ts"></script>

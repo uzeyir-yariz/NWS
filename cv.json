@@ -1,0 +1,381 @@
+{
+  "analyticsCode": "",
+  "basics": {
+    "name": "Üzeyir Yarız",
+    "label": "Frontend",
+    "animated_main_label": "developer",
+    "animated_secondary_initial_label": "Frontend",
+    "animated_secondary_final_label": "Frontend",
+    "image": "/profil.jpg",
+    "email": "uzeyiryariz13@gmail.com",
+    "url": "https://www.linkedin.com/in/%C3%BCzeyir-yariz-aa2722259/",
+    "summary": "I am a Front-end Developer currently learning JavaScript and React. Additionally, I am exploring WordPress. I have experience using MongoDB as a database. My knowledge of Back-end development and software systems is limited, but I am eager to learn more.",
+    "theme": "orange",
+    "location": {
+      "address": "-",
+      "city": "Istanbul",
+      "countryCode": "TR",
+      "region": "Marmara"
+    },
+    "profiles": [
+      {
+        "network": "X / Twitter",
+        "icon": "ri:twitter-fill",
+        "color": "#1DA1F2",
+        "username": "@uzeyir_yariz",
+        "url": "https://x.com/uzeyir_yariz"
+      },
+      {
+        "network": "LinkedIn",
+        "icon": "ri:linkedin-fill",
+        "color": "#0066C2",
+        "username": "ÜZEYİR YARIZ",
+        "url": "https://www.linkedin.com/in/%C3%BCzeyir-yariz-aa2722259/"
+      },
+      {
+        "network": "GitHub",
+        "icon": "mdi:github",
+        "color": "#929AAB",
+        "username": "uzeyir-yariz",
+        "url": "https://github.com/uzeyir-yariz"
+      },
+      {
+        "network": "Email",
+        "icon": "ri:mail-fill",
+        "color": "#D44638",
+        "username": "uzeyiryariz13",
+        "url": "mailto:uzeyiryariz13@gmail.com"
+      }
+    ]
+  },
+  "education": [
+    {
+      "institution": "Başakşehir Multi-Program Anatolian High School",
+      "url": "https://www.instagram.com/basaksehircpal/",
+      "area": "Web Development",
+      "studyType": "Full-time student",
+      "startDate": "2019-09-01",
+      "endDate": "2024-06-14"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Javascript",
+      "date": "13-07-2024",
+      "url": "https://github.com/uzeyir-yariz/javascript/blob/main/belge.pdf",
+      "issuer": "Udemy"
+    },
+    {
+      "name": "React",
+      "date": "11-10-2024",
+      "url": "https://github.com/uzeyir-yariz/React/blob/main/sertifika.pdf",
+      "issuer": "Udemy"
+    }
+  ],
+  "work": [
+    {
+      "name": "Noca Display",
+      "position": "Front-end Developer",
+      "location_type": "Office",
+      "location": "Turkey",
+      "url": "https://www.linkedin.com/company/noca-display/",
+      "startDate": "2023-09-01",
+      "endDate": "2024-06-01",
+      "summary": "Developed WordPress-based projects, optimized content for SEO, implemented CSS styling, created single-page designs, integrated WordPress plugins, enhanced website security, and analyzed traffic using Google Analytics.",
+      "highlights": [
+        "Developed a WordPress-based web project to promote electronic products, ensuring an optimized user experience and responsive design."
+      ],
+      "responsibilities": [
+        "Completed missing pages and integrated new plugins to enhance functionality.",
+        "Updated broken code, improved website performance, and uploaded new visual assets.",
+        "Implemented and researched security plugins to protect the website from vulnerabilities."
+      ],
+      "achievements": [
+        "Gained in-depth knowledge of WordPress plugins and their functionalities.",
+        "Utilized Google Analytics for website tracking and performance monitoring."
+      ],
+      "skills": {
+        "HTML5": "simple-icons:html5",
+        "CSS3": "ri:css3-fill",
+        "GitHub": "mdi:github",
+        "Figma": "simple-icons:figma",
+        "WordPress": "simple-icons:wordpress",
+        "SEO": "simple-icons:searxng"
+      }
+    }
+  ],
+  
+  "skills": [
+    {
+      "name": "HTML",
+      "icon": "simple-icons:html5",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "icon": "ri:css3-fill",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "SCSS",
+      "icon": "simple-icons:sass",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "CSS Preprocessor",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "icon": "mdi:tailwind",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "CSS Framework",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "icon": "simple-icons:bootstrap",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "CSS Framework",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "icon": "simple-icons:javascript",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "Astro",
+      "icon": "simple-icons:astro",
+      "level": "Starter",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "SSR",
+        "Static Generation"
+      ]
+    },
+    {
+      "name": "Node",
+      "icon": "ri:nodejs-line",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Backend",
+        "JavaScript",
+        "Server"
+      ]
+    },
+    {
+      "name": "MongoDB",
+      "icon": "simple-icons:mongodb",
+      "level": "starter",
+      "keywords": [
+        "Databases",
+        "File",
+        "Data Storage",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "icon": "mdi:git",
+      "level": "Advanced",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "icon": "mdi:github",
+      "level": "Advanced",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code",
+        "Git"
+      ]
+    },
+    {
+      "name": "AWS",
+      "icon": "simple-icons:amazonaws",
+      "level": "Starter",
+      "keywords": [
+        "Cloud Computing",
+        "Backend",
+        "Infrastructure"
+      ]
+    },
+    {
+      "name": "Python",
+      "icon": "simple-icons:python",
+      "level": "Beginner",
+      "keywords": [
+        "Programming",
+        "Automation",
+        "Web Development"
+      ]
+    },
+    {
+      "name": "Shell",
+      "icon": "simple-icons:shell",
+      "level": "Beginner",
+      "keywords": [
+        "Scripting",
+        "Automation"
+      ]
+    },
+    {
+      "name": "Linux",
+      "icon": "simple-icons:linux",
+      "level": "Beginner",
+      "keywords": [
+        "OS",
+        "Scripting",
+        "Automation"
+      ]
+    },
+    {
+      "name": "Postman",
+      "icon": "simple-icons:postman",
+      "level": "Starter",
+      "keywords": [
+        "API",
+        "Testing",
+        "Web Development",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Figma",
+      "icon": "simple-icons:figma",
+      "level": "Beginner",
+      "keywords": [
+        "Prototyping",
+        "Web Development",
+        "Frontend"
+      ]
+    }
+  ],
+
+  "languages": [
+    {
+      "language": "Turkish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Beginner - A1"
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "portfolio",
+      "isActive": true,
+      "description": "I designed a modern and minimal website based on a ready-made Astro template.",
+      "highlights": [
+        "🌐 Modern web design",
+        "🚀 Fast loading and user-friendly experience",
+        "⚡ Powerful infrastructure with Astro + TypeScript"
+      ],
+      "stack": {
+        "Astro": "simple-icons:astro",
+        "TypeScript": "simple-icons:typescript",
+        "CSS": "simple-icons:css",
+        "Vite": "simple-icons:vite",
+        "PNPM": "simple-icons:pnpm"
+      },
+      "github": "https://github.com/uzeyir-yariz/NWS",
+      "url": "https://uzeyir-yariz.com.tr/"
+    },
+    {
+      "name": "oldedb blog",
+      "isActive": true,
+      "description": "I created a fully responsive and modern blog website using an Astro template, focusing on clean design and fast performance.",
+      "stack": {
+        "Astro": "simple-icons:astro",
+        "TypeScript": "simple-icons:typescript",
+        "Tailwind CSS": "simple-icons:tailwindcss",
+        "Markdown": "simple-icons:markdown",
+        "Vite": "simple-icons:vite"
+      },
+      "highlights": [
+        "⚡ Built with Astro for lightning-fast performance",
+        "🎨 Clean and minimal design",
+        "🖥️ Fully responsive on all devices",
+        "✍️ Blog-ready with Markdown support",
+        "🌙 Light and dark mode toggle"
+      ],
+      "url": "http://oldedb.com.tr/",
+      "github": "https://github.com/uzeyir-yariz/blog"
+    },
+    {
+      "name": "oldedf",
+      "description": "I'm currently working on 'oldedf', a WordPress-based forum website designed to create an interactive community platform.",
+      "isActive": false,
+      "highlights": [
+        "💬 Community-driven forum structure",
+        "🛠️ Built with WordPress for flexibility",
+        "🎨 Customizable design and themes",
+        "📱 Mobile-friendly and responsive",
+        "🔒 User accounts and moderation system"
+      ],
+      "stack": {
+        "WordPress": "simple-icons:wordpress",
+        "PHP": "simple-icons:php",
+        "MySQL": "simple-icons:mysql",
+        "HTML5": "simple-icons:html5",
+        "CSS3": "simple-icons:css3"
+      },
+      "url": "http://oldedf.com.tr/"
+    },
+    {
+      "name": "Yusufcolakmedya E-Commerce",
+      "description": "I'm currently developing a simple e-commerce website using core web technologies like HTML, CSS, JavaScript, and Firebase for backend services.",
+      "isActive": true,
+      "url": "https://yusufcolakmedya.com.tr/",
+      "highlights": [
+        "🛒 Basic shopping cart functionality",
+        "🔥 Firebase authentication and database",
+        "🎨 Clean and responsive UI",
+        "📦 Product listing and filtering",
+        "💳 Simple checkout flow (in progress)"
+      ],
+      "stack": {
+        "HTML5": "simple-icons:html5",
+        "CSS3": "simple-icons:css3",
+        "JavaScript": "simple-icons:javascript",
+        "Firebase": "simple-icons:firebase"
+      }
+    }
+    
+  ]
+}
