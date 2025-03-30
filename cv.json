@@ -6,11 +6,11 @@
     "animated_main_label": "developer",
     "animated_secondary_initial_label": "Frontend",
     "animated_secondary_final_label": "Frontend",
-    "image": "/profil.jpg",
+    "image": "/avatar.png",
     "email": "uzeyiryariz13@gmail.com",
     "url": "https://www.linkedin.com/in/%C3%BCzeyir-yariz-aa2722259/",
     "summary": "I am a Front-end Developer currently learning JavaScript and React. Additionally, I am exploring WordPress. I have experience using MongoDB as a database. My knowledge of Back-end development and software systems is limited, but I am eager to learn more.",
-    "theme": "orange",
+    "theme": "blue",
     "location": {
       "address": "-",
       "city": "Istanbul",
@@ -54,7 +54,7 @@
       "url": "https://www.instagram.com/basaksehircpal/",
       "area": "Web Development",
       "studyType": "Full-time student",
-      "startDate": "2019-09-01",
+      "startDate": "2020-09-01",
       "endDate": "2024-06-14"
     }
   ],
