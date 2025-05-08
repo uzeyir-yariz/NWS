@@ -317,6 +317,24 @@
       "url": "https://uzeyir-yariz.com.tr/"
     },
     {
+      "name": "online-course-platform",
+      "isActive": true,
+      "description": "I built a modern and responsive online course platform inspired by Udemy, using Astro and TypeScript.",
+      "highlights": [
+        "🎓 Clean and structured course layout",
+        "📺 Video lessons, progress tracking, and course categorization",
+        "⚡ Built with Astro, TypeScript, and a lightweight, fast stack"
+      ],
+      "stack": {
+        "Astro": "simple-icons:astro",
+        "TypeScript": "simple-icons:typescript",
+        "TailwindCSS": "simple-icons:tailwindcss",
+        "Vite": "simple-icons:vite",
+        "PNPM": "simple-icons:pnpm"
+      },
+      "url": "https://www.yusufcolakakademi.com.tr/"
+    },
+    {
       "name": "oldedb blog",
       "isActive": true,
       "description": "I created a fully responsive and modern blog website using an Astro template, focusing on clean design and fast performance.",
