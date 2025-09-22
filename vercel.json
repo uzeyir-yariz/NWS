@@ -1,3 +1,0 @@
-{
-  "buildCommand": "astro build --config=./astro.config.vercel.mjs"
-}
